@@ -72,10 +72,24 @@ Close the door softly and listen to the whispering wind.		rzexassaj tharzrza sje
 		
 		
 Will the stars still shine when the world falls asleep?		world falls-asleep śega ša-stars ša-shine still question-particle
-The walls are painted with the colors of twilight.		walls are-painted[xx-declention] xaa twilight-śi colors
-If I were a river, I would carve a path through the hardest stone.		ši-river-jjee śega ši-carved path xaa siše hardest(e'e)
-If the rain falls gently, the flowers will bloom by morning.		the rain falls śegelaga śega flowers bloom xaa morning
-		
+
+star = sky fire? 
+sky — ceśe
+šaššaceśe -> šaceśe?
+
+shine — reflect light + stand out
+šaqassa
+
+śi'i world sleeps-śega hašaceśe šaqassa still?   maybe chi'i instead of chi
+
+
+
+The walls are painted with the colors of twilight.		walls are-painted[xx-declention] sa twilight-śi colors
+If I were a river, I would carve a path through the hardest stone.		(ši) sejeșa jjeeśega ši-carved seșeci xaa siše šisaśe'e
+If the rain falls gently, the flowers will bloom by morning.		the rain falls śegelaga śega flowers bloom xaa taašaxe
+
+river = sejeșa
+road, path = seșeci		
 		
 		
 cetissa / сьэтисса	to call	
@@ -105,28 +119,121 @@ teja (tejeja) / seja (ce'eja)	egg (eggs)
 fire	rzarrza | šašša	harzarrza (pl.)
 nose		
 to go (away)		jigessa
-water	ljihaxa	
-mouth		
-tongue	tassela	tassa
-blood		
+water	ljihaxa	ļijaxa? ļijeșa
+mouth	ļigeši	
+tongue	seci
+blood	šasa	
 bone ?		
 you / 2 sg	ga	
-root		
+root	taje	
 to come		jirzissa
-breast		
+breast?		
 rain		
 me	rzi	
 name 	sata	
 louse		
-wing		
-flesh/meat		
+wing	ļišece	
+flesh/meat	tesa	
 arm/hand ?		
 fly +	sjarzecesse	
-night		
-ear		
+night	ļixe	
+ear		ļihaša
 neck		
 far		sheshe
-to do/make		latasse
+to do/make	tasse
+to begin    taasse
 close		rzirzi
+tail    śixi (seśixi)
+eye     xe
+day     šaxe
+morning taašaxe? tašaxe?
+head    ļigiși? tegiși? giși?
+
+hard    -šisaśe
+
+śașeceji
+śașecexxe
+
+šaļe
+šasagi
+gişi
+cecişa
+şihe
+cejesa
+śesexe
+śisitişi
+šisaśe
+tișasi
 
 
+to stand 	gaśixxi
+a place		ļi?gaśi / gaśi?
+where is it? she gachi cci'i jje?
+
+
+hello!					(ge)cci'i!
+hi!						ssee
+how are you?			chi (ge)ceshassa?
+i'm fine				(rzi)ceshassa
+what is your name?		(ge)sataxxa cci'i? / shesatassarzi cci'i? (how are you called?)
+my name is N			(rzi)sataxxa N (i'm called N)
+where are you from?		(ge)jirzissa xaa gachi cci'i?
+i'm from N				jirzissa xaa N
+please					[I will hunt for you?]
+thank you				[Let you eat a lot?]
+you are welcome			[I will hunt for you]
+yes						hee
+no						ssaa
+excuse me				(rzi)xessege — lit. I am looking at you
+sorry					(rzi)taaggaśiil (xaa ge) — lit. I stood before you
+goodbye					(ge)ceshassa!
+bye!					sse'e
+later					rzala
+
+i speak					(rzi)hissa 
+i don't speak			ssaa(rzi)hissa
+do you speak			chi (ge)hissa
+
+
+english					[englisc] → hellhiss
+do you speak english?	chi hissa hellhiss? — hee
+russian					luss
+german					[diutisk →] ciitiss
+french					[franci →] llaass (t'lass)
+serbian					[srpski →] ssiji (sštsji)
+
+
+-ti						diminutive?
+śixiti					хвостик
+xeti					глазик/глазок
+seciti					язычок (uvula)
+
+
+gataxxa to be dead
+taagataxxa to die
+gatassa to kill
+
+śesexxe to be alive 
+śesesse to live
+taaśesesse to be born, to hatch
+
+
+all							(ce'e-/teje-/qa'a-/ha-)-șșa
+down, lowly
+different, other
+or							hi
+thing, object, matter		
+bad
+tool, device
+inside
+dirty
+sound						haša (pl.tantum)
+group
+
+colours
+red							&&&
+black
+white
+yellow
+green
+blue

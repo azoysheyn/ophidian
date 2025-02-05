@@ -1,0 +1,28 @@
+Input word: șexeļaja
+  latin-1: șexeļaja
+  latin-2: shexelhaja
+  cyrillic-1: шэхэльахьа
+  cyrillic-2: шехелјаја
+  alphabet_type: latin-1
+
+Input word: rzellheca
+  latin-1: rzellheca
+  latin-2: rzellheca
+  cyrillic-1: rzэлльэсьа
+  cyrillic-2: rzеллкјесја
+  alphabet_type: latin-1
+
+Input word: тащихьа
+  latin-1: тащихьа
+  latin-2: тащихьа
+  cyrillic-1: тащихьа
+  cyrillic-2: тащихьа
+  alphabet_type: cyrillic-1
+
+Input word: фи'икешја
+  latin-1: фи'икешја
+  latin-2: фи'икешја
+  cyrillic-1: фиъикешја
+  cyrillic-2: фи'икешја
+  alphabet_type: latin-1
+

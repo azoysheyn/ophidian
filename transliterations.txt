@@ -1,0 +1,20 @@
+Word: șexeļaja
+Script: latin
+Variant: 1
+Transliterated: șexeļaja
+
+Word: rzellheca
+Script: latin
+Variant: 2
+Transliterated: rzellheca
+
+Word: тащихьа
+Script: cyrillic
+Variant: 1
+Transliterated: тащихьа
+
+Word: фи'икешја
+Script: cyrillic
+Variant: 2
+Transliterated: фи'икешја
+
