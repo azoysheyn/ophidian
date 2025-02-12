@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexicon Viewer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <div id="output">Loading lexicon...</div>
+
+    <script>
+        fetch('lexicon.yaml')
+            .then(response => response.text())
+            .then(yamlText => {
+                const data = jsyaml.load(yamlText);
+                console.log("Parsed YAML Data:", data); // Debugging output
+                displayLexicon(data);
+            })
+            .catch(error => {
+                document.getElementById('output').innerText = 'Failed to load lexicon.yaml';
+                console.error('Error loading YAML:', error);
+            });
+    
+        function displayLexicon(data) {
+            const output = document.getElementById('output');
+            output.innerHTML = '';
+            
+            for (const category in data) {
+                if (data.hasOwnProperty(category)) {
+                    if (!Array.isArray(data[category])) {
+                        console.error(`Expected an array for category ${category}, but got:`, data[category]);
+                        continue; // Skip this category if it's not an array
+                    }
+    
+                    const section = document.createElement('div');
+                    section.innerHTML = `<h2>${category}</h2>`;
+    
+                    const table = document.createElement('table');
+                    table.innerHTML = `<tr><th>Latin</th><th>Cyrillic</th><th>Meaning</th></tr>`;
+    
+                    data[category].forEach(entry => {
+                        if (typeof entry !== 'object') {
+                            console.error(`Skipping invalid entry in ${category}:`, entry);
+                            return;
+                        }
+    
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${entry['word-latin'] || ''}</td>
+                            <td>${entry['word-cyrillic'] || ''}</td>
+                            <td>${entry.meaning || ''}</td>
+                        `;
+                        table.appendChild(row);
+                    });
+    
+                    section.appendChild(table);
+                    output.appendChild(section);
+                }
+            }
+        }
+    </script>    
+</body>
+</html>
