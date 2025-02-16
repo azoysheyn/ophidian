@@ -180,7 +180,7 @@ my name is N			(rzi)sataxxa N (i'm called N)
 where are you from?		(ge)jirzissa xaa gachi cci'i?
 i'm from N				jirzissa xaa N
 please					[I will hunt for you?]
-thank you				[Let you eat a lot?]
+thank you				[Let you eat a lot?] heegeseșesse [a lot]
 you are welcome			[I will hunt for you]
 yes						hee
 no						ssaa
@@ -232,8 +232,20 @@ group
 
 colours
 red							&&&
+warm/infrared				
 black
 white
 yellow
 green
 blue
+
+
+
+transliteration
+
+algorythm
+
+1. double consonants
+2. single consonants
+3. vowels
+
