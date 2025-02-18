@@ -249,3 +249,19 @@ algorythm
 2. single consonants
 3. vowels
 
+
+
+**future tense meaning**
+
+want + inf
+Pers.-qeșesse śa-Verb
+
+I'll see					(ši)qesse śaxexxe
+I'll have seen				qesse śaxxee
+
+
+**past tense meaning**
+
+be + inf
+
+I closed the door 			šijjee śašexassal / śašexassalajjee?
