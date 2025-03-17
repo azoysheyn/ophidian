@@ -256,8 +256,11 @@ algorythm
 want + inf
 Pers.-qeșesse śa-Verb
 
-I'll see					(ši)qesse śaxexxe
-I'll have seen				qesse śaxxee
+I'll see					(ši)qeșesse śaxexxe
+I'll have seen				qeșesse śaxxee
+
+jigessa + inf?
+I go? see					(ši)jigessa śaxexxe
 
 
 **past tense meaning**
