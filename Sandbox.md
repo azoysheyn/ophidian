@@ -265,6 +265,10 @@ I go? see					(ši)jigessa śaxexxe
 
 **past tense meaning**
 
-be + inf
+be + inf?
 
 I closed the door 			šijjee śašexassal / śašexassalajjee?
+
+be + perf
+
+rzijjee rzexassal
