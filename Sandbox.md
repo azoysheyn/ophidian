@@ -198,15 +198,15 @@ do you speak			chi (ge)hissa
 english					[englisc] → hellhiss
 do you speak english?	chi hissa hellhiss? — hee
 russian					luss
-german					[diutisk →] ciitiss
-french					[franci →] llaass (t'lass)
+german					[diutisk →] ciitiss tutissi
+french					[franci →] llaass (t'lass) tulaassa
 serbian					[srpski →] ssiji (sštsji)
 
 
 -ti						diminutive?
 śixiti					хвостик
 xeti					глазик/глазок
-seciti					язычок (uvula)
+teciti					язычок (uvula)
 
 
 gataxxa to be dead
@@ -219,7 +219,7 @@ taaśesesse to be born, to hatch
 
 
 all							(ce'e-/teje-/qa'a-/ha-)-șșa
-down, lowly
+down, lowly					tahaa
 different, other
 or							hi
 thing, object, matter		
