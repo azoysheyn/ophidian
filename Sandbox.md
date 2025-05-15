@@ -199,7 +199,7 @@ english					[englisc] → hellhiss
 do you speak english?	chi hissa hellhiss? — hee
 russian					luss
 german					[diutisk →] ciitiss tutissi
-french					[franci →] llaass (t'lass) tulaassa
+french					[franci →] llaass (t'lass) tulaasa
 serbian					[srpski →] ssiji (sštsji)
 
 
@@ -231,19 +231,34 @@ sound						haša (pl.tantum)
 group
 
 colours
-red							&&&
-warm/infrared				
-black
-white
-yellow
-green
-blue
+red							-ssice
+warm/infrared				-sa'a
+black						-lasa
+white						-tiša
+yellow						-teșșa
+green						-rhixa
+blue						harhaqa/rhili/gul/serhule
+
+rhathesshe - warm sand
+thesshe - sand
+
+rixe - skin
+rixa
+
+
+three yellow snakes attack a small bird
+secishi setessha selata sejahassi terhece terhiisa
+CL.1-snake CL.1-yellow CL.1-three CL.1-attack CL.3-bird CL.3-small
+
+i want to eat two eggs
+rheqeshesse chaseshesse teja tettaa
+
+o, hear the sound of this language!
+heeharhaxxa rhi chahisa-ji harha!
 
 
 
-transliteration
-
-algorythm
+transliteration algorythm
 
 1. double consonants
 2. single consonants
@@ -272,3 +287,19 @@ I closed the door 			šijjee śašexassal / śašexassalajjee?
 be + perf
 
 rzijjee rzexassal
+
+
+
+**stems**
+
+ja- belong to semantic family of attacking, hurting etc. (jagassi, jahassa)
+
+jasissa, jarhesse, jatassa, jatesse
+
+
+cisașa
+xešeta
+
+
+C=sșšśtjxhcgqlļ
+V=aei
