@@ -247,14 +247,14 @@ rixa
 
 
 three yellow snakes attack a small bird
-secishi setessha selata sejahassi terhece terhiisa
+seciși seteșșa selata sejahassi tešece tešiisa
 CL.1-snake CL.1-yellow CL.1-three CL.1-attack CL.3-bird CL.3-small
 
 i want to eat two eggs
-rheqeshesse chaseshesse teja tettaa
+šeqeșesse śa-seșesse teja tettaa 
 
 o, hear the sound of this language!
-heeharhaxxa rhi chahisa-ji harha!
+heehašaxxa ši śahisa-ji haša!
 
 
 
