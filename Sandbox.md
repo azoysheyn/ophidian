@@ -117,11 +117,11 @@ teja (tejeja) / seja (ce'eja)	egg (eggs)
 
 
 fire	rzarrza | šašša	harzarrza (pl.)
-nose		
+nose	ļihege	
 to go (away)		jigessa
 water	ljihaxa	ļijaxa? ļijeșa
 mouth	ļigeši	
-tongue	seci
+tongue	teci
 blood	šasa	
 bone ?		
 you / 2 sg	ga	
