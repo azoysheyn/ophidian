@@ -256,6 +256,9 @@ i want to eat two eggs
 o, hear the sound of this language!
 heehašaxxa ši śahisa-ji haša!
 
+tejeșșa tejeha tejeteșșa
+all the yellow eggs
+
 
 
 transliteration algorythm
