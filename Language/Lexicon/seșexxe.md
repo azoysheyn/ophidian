@@ -1,18 +1,16 @@
 ---
 type: lexeme
-lemma: seșexxe
-script:
-  - seșexxe
-  - сэшэххэ
+lemma: seșexxe
+cyrillic: сэшэххэ
 pos: verbs
 meaning: to digest
 verb_type: "[[Type II]]"
-noun_class: ""
-phon: ""
-etym: ""
-examples:
-tags:
-  - lexeme
+noun_class:
 root: "[[-seșe-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

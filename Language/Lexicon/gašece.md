@@ -1,18 +1,16 @@
 ---
 type: lexeme
-lemma: gašece
-script:
-  - gašece
-  - гажэсьэ
+lemma: gašece
+cyrillic: гажэсьэ
 pos: nouns
 meaning: bird of prey
-verb_type: ""
+verb_type:
 noun_class: "[[Class 5]]"
-phon: ""
-etym: ""
-examples:
-tags:
-  - lexeme
 root: "[[-šece-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

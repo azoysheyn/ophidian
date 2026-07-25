@@ -1,19 +1,16 @@
 ---
 type: lexeme
 lemma: hee
-script:
-  - hee
-  - ьээ
+cyrillic: ьээ
 pos: particles
 meaning: yes
-verb_type: ""
-noun_class: ""
-phon: ""
+verb_type:
+noun_class:
+root: [[[-heeje-]]]
+phon:
 etym: from "heeje" — "to be"
 examples:
-tags:
-  - lexeme
-root:
-  - "[[-heeje-]]"
+status: ok
+tags: [lexeme]
 ---
 

@@ -1,19 +1,16 @@
 ---
 type: lexeme
 lemma: hehassa
-script:
-  - hehassa
-  - ьэьасса
+cyrillic: ьэьасса
 pos: verbs
 meaning: to blow
-verb_type: "1"
-noun_class: ""
-phon: ""
-etym: ""
+verb_type: 1
+noun_class:
+root: [[[-heha-]]]
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root:
-  - "[[-heha-]]"
+status: ok
+tags: [lexeme]
 ---
 

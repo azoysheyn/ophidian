@@ -1,11 +1,8 @@
 ---
 type: affix
-script:
-  - qa'a
-  - каъа
+cyrillic: каъа
 meaning: "[[Class 6]]"
 etym:
 examples:
-tags:
-  - affix
+tags: [affix]
 ---

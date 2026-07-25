@@ -1,16 +1,16 @@
 ---
 type: lexeme
 lemma: ļicejeśe
-script:
+cyrillic:
 pos: nouns
 meaning: bird's nest
-verb_type: ""
+verb_type:
 noun_class: "[[Class 8]]"
-phon: ""
-etym: ""
+root:
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root: []
+status: unverified
+tags: [lexeme]
 ---
 

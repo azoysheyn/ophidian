@@ -1,18 +1,16 @@
 ---
 type: lexeme
-lemma: qeșesse
-script:
-  - qeșesse
-  - кэшэссэ
+lemma: qeșesse
+cyrillic: кэшэссэ
 pos: verbs
 meaning: to want
-verb_type: "1"
-noun_class: ""
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
-root: []
+verb_type: 1
+noun_class:
+root:
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

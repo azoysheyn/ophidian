@@ -1,18 +1,16 @@
 ---
 type: lexeme
 lemma: ssi'i
-script:
-  - ssi'i
-  - ссиъи
+cyrillic: ссиъи
 pos: pronouns
 meaning: what, who, which
-verb_type: ''
-noun_class: ''
-phon: ''
-etym: ''
-examples: []
-tags:
-- lexeme
-root: ''
+verb_type:
+noun_class:
+root:
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

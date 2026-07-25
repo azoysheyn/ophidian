@@ -1,19 +1,16 @@
 ---
 type: lexeme
-lemma: -seśe
-script:
-  - seśe
-  - сэщэ
+lemma: -seśe
+cyrillic: сэщэ
 pos: adjectives
 meaning: big
-verb_type: ""
-noun_class: ""
-phon: ""
-etym: ""
+verb_type:
+noun_class:
+root: [[[-seśe-]]]
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root:
-  - "[[-seśe-]]"
+status: ok
+tags: [lexeme]
 ---
 

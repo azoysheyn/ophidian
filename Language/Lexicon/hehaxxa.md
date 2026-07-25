@@ -1,19 +1,16 @@
 ---
 type: lexeme
 lemma: hehaxxa
-script:
-  - hehaxxa
-  - ьэьахха
+cyrillic: ьэьахха
 pos: verbs
 meaning: to swell, to bulge
-verb_type: "2"
-noun_class: ""
-phon: ""
-etym: ""
+verb_type: 2
+noun_class:
+root: [[[-heha-]]]
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root:
-  - "[[-heha-]]"
+status: ok
+tags: [lexeme]
 ---
 

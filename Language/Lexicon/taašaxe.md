@@ -1,18 +1,16 @@
 ---
 type: lexeme
-lemma: taašaxe
-script:
-  - taašaxe
-  - таажахэ
+lemma: taašaxe
+cyrillic: таажахэ
 pos: nouns
 meaning: morning
-verb_type: ""
+verb_type:
 noun_class: "[[Class 7]]"
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
 root: "[[-xe-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

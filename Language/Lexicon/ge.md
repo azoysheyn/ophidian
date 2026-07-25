@@ -1,19 +1,16 @@
 ---
 type: lexeme
 lemma: ge
-script:
-  - ge
-  - гэ
+cyrillic: гэ
 pos: pronouns
 meaning: you, there (near you), that (near you)
-verb_type: ""
-noun_class: ""
-phon: ""
-etym: ""
+verb_type:
+noun_class:
+root: [[[-ge-]]]
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root:
-  - "[[-ge-]]"
+status: ok
+tags: [lexeme]
 ---
 

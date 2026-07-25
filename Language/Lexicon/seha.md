@@ -1,18 +1,16 @@
 ---
 type: lexeme
 lemma: seha
-script:
-  - seha
-  - сэьа
+cyrillic: сэьа
 pos: nouns
 meaning: lover
-verb_type: ""
+verb_type:
 noun_class: "[[Class 1]]"
-phon: ""
+root:
+phon:
 etym: from Sanskrit स्नेह (sneha)
-examples: 
-tags:
-  - lexeme
-root: ""
+examples:
+status: ok
+tags: [lexeme]
 ---
 

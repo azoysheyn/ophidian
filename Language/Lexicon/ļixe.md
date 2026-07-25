@@ -1,18 +1,16 @@
 ---
 type: lexeme
-lemma: ļixe
-script:
-  - ļixe
-  - льихэ
+lemma: ļixe
+cyrillic: льихэ
 pos: nouns
 meaning: night
-verb_type: ""
+verb_type:
 noun_class: "[[Class 9]]"
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
 root: "[[-xe-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

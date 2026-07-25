@@ -1,16 +1,16 @@
 ---
 type: lexeme
 lemma: ļicexese
-script:
+cyrillic:
 pos: nouns
 meaning: snake's nest
-verb_type: ""
+verb_type:
 noun_class: "[[Class 9]]"
-phon: ""
-etym: ""
+root:
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root: []
+status: unverified
+tags: [lexeme]
 ---
 ??

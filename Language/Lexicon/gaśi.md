@@ -1,18 +1,16 @@
 ---
 type: lexeme
-lemma: gaśi
-script:
-  - gaśi
-  - гащи
+lemma: gaśi
+cyrillic: гащи
 pos: nouns
 meaning: place
-verb_type: ""
+verb_type:
 noun_class: "[[Class 7]]"
-phon: ""
-etym: ""
-examples:
-tags:
-  - lexeme
 root: "[[-gaśi-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

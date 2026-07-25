@@ -1,11 +1,8 @@
 ---
 type: affix
-script:
-  - teje
-  - тэхьэ
+cyrillic: тэхьэ
 meaning: "[[Class 4]]"
 etym:
 examples:
-tags:
-  - affix
+tags: [affix]
 ---

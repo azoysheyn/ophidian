@@ -1,19 +1,16 @@
 ---
 type: lexeme
 lemma: -ša'a
-script:
-  - ša'a
-  - жаъа
+cyrillic: жаъа
 pos: adjectives
 meaning: infrared, warm
-verb_type: ""
-noun_class: ""
-phon: ""
-etym: ""
-examples: []
-tags:
-  - lexeme
-root:
-  - "[[-ša-]]"
+verb_type:
+noun_class:
+root: [[[-ša-]]]
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

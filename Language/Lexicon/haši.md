@@ -1,19 +1,16 @@
 ---
 type: lexeme
-lemma: haši
-script:
-  - haši
-  - ьажи
+lemma: haši
+cyrillic: ьажи
 pos: pronouns
 meaning: we, here, these
-verb_type: ""
-noun_class: ""
-phon: ""
-etym: ""
+verb_type:
+noun_class:
+root: [[[-ši-]]]
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root:
-  - "[[-ši-]]"
+status: ok
+tags: [lexeme]
 ---
 

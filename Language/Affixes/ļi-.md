@@ -1,11 +1,8 @@
 ---
 type: affix
-script:
-  - ļi
-  - льи
+cyrillic: льи
 meaning: "[[Class 9]]"
 etym:
 examples:
-tags:
-  - affix
+tags: [affix]
 ---

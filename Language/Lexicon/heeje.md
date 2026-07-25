@@ -1,19 +1,16 @@
 ---
 type: lexeme
 lemma: heeje
-script:
-  - heeje
-  - ьээхьэ
+cyrillic: ьээхьэ
 pos: verbs
 meaning: to be
 verb_type: irregular
-noun_class: ""
-phon: ""
-etym: ""
+noun_class:
+root: [[[heeje]]]
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root:
-  - "[[heeje]]"
+status: ok
+tags: [lexeme]
 ---
 

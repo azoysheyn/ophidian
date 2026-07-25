@@ -1,19 +1,16 @@
 ---
 type: lexeme
 lemma: sataxxa
-script:
-  - sataxxa
-  - сатахха
+cyrillic: сатахха
 pos: verbs
 meaning: to be called
-verb_type: "2"
-noun_class: ""
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
-root:
-  - "[[-sata-]]"
+verb_type: 2
+noun_class:
+root: [[[-sata-]]]
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

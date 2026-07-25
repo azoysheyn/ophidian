@@ -1,18 +1,16 @@
 ---
 type: lexeme
 lemma: telesa
-script:
-  - telesa
-  - тэлэса
+cyrillic: тэлэса
 pos: nouns
 meaning: window
-verb_type: ""
+verb_type:
 noun_class: "[[Class 3]]"
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
-root: ""
+root:
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

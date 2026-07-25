@@ -1,19 +1,16 @@
 ---
 type: lexeme
 lemma: tassa
-script:
-  - tassa
-  - тасса
-  - taßa
+cyrillic: тасса
 pos: verbs
 meaning: to do
 verb_type: "[[Type I]]"
-noun_class: ""
-phon: ""
-etym: ""
-examples:
-tags:
-  - lexeme
+noun_class:
 root:
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

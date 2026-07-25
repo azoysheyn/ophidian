@@ -1,19 +1,16 @@
 ---
 type: lexeme
-lemma: șagaxxa
-script:
-  - șagaxxa
-  - шагахха
+lemma: șagaxxa
+cyrillic: шагахха
 pos: verbs
 meaning: to be open
-verb_type: "2"
-noun_class: ""
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
-root:
-  - "[[-șaga-]]"
+verb_type: 2
+noun_class:
+root: [[[-șaga-]]]
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

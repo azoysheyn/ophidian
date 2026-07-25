@@ -1,18 +1,16 @@
 ---
 type: lexeme
 lemma: -xeta
-script:
-  - xeta
-  - хэта
+cyrillic: хэта
 pos: numerals
 meaning: one
-verb_type: ""
-noun_class: ""
-phon: ""
-etym: ""
-examples: []
-tags:
-  - lexeme
-root: ""
+verb_type:
+noun_class:
+root:
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

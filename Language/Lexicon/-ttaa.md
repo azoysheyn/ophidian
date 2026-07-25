@@ -1,18 +1,16 @@
 ---
 type: lexeme
 lemma: -ttaa
-script:
-  - ttaa
-  - ттаа
+cyrillic: ттаа
 pos: numerals
 meaning: two
-verb_type: ""
-noun_class: ""
-phon: ""
-etym: ""
-examples: []
-tags:
-  - lexeme
-root: ""
+verb_type:
+noun_class:
+root:
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

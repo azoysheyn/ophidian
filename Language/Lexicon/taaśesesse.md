@@ -1,19 +1,16 @@
 ---
 type: lexeme
-lemma: taaśesesse
-script:
-  - taaśesesse
-  - таащэсэссэ
-  - taaśeseße
+lemma: taaśesesse
+cyrillic: таащэсэссэ
 pos: verbs
 meaning: to be born
-verb_type: "1"
-noun_class: ""
-phon: ""
-etym: ""
-examples:
-tags:
-  - lexeme
+verb_type: 1
+noun_class:
 root: "[[-śese-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

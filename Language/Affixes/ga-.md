@@ -1,11 +1,8 @@
 ---
 type: affix
-script:
-  - ga
-  - га
+cyrillic: га
 meaning: "[[Class 5]]"
 etym:
 examples:
-tags:
-  - affix
+tags: [affix]
 ---

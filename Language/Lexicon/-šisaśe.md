@@ -1,18 +1,16 @@
 ---
 type: lexeme
-lemma: -šisaśe
-script:
-  - šisaśe
-  - жисащэ
+lemma: -šisaśe
+cyrillic: жисащэ
 pos: adjectives
 meaning: hard, tough
-verb_type: ""
-noun_class: ""
-phon: ""
-etym: ""
+verb_type:
+noun_class:
+root:
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root: []
+status: ok
+tags: [lexeme]
 ---
 

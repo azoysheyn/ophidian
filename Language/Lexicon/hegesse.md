@@ -1,18 +1,16 @@
 ---
 type: lexeme
 lemma: hegesse
-script:
-  - hegesse
-  - ьэгэссэ
+cyrillic: ьэгэссэ
 pos: verbs
 meaning: to smell
-verb_type: "1"
-noun_class: ""
-phon: ""
-etym: ""
-examples:
-tags:
-  - lexeme
+verb_type: 1
+noun_class:
 root: "[[-hege-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

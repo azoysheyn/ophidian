@@ -1,18 +1,16 @@
 ---
 type: lexeme
 lemma: seja
-script:
-  - seja
-  - сэхьа
+cyrillic: сэхьа
 pos: nouns
 meaning: snake eggs
-verb_type: ""
+verb_type:
 noun_class: "[[Class 2]]"
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
 root: "[[-ja-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

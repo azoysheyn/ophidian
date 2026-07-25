@@ -1,18 +1,16 @@
 ---
 type: lexeme
 lemma: xaa
-script:
-  - xaa
-  - хаа
+cyrillic: хаа
 pos: prepositions
 meaning: in, to, along, on, at, by etc.
-verb_type: ''
-noun_class: ''
-phon: ''
-etym: ''
-examples: []
-tags:
-- lexeme
-root: ''
+verb_type:
+noun_class:
+root:
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

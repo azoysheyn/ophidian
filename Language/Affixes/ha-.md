@@ -1,11 +1,8 @@
 ---
 type: affix
-script:
-  - ha
-  - ьа
+cyrillic: ьа
 meaning: "[[Class 8]]"
 etym:
 examples:
-tags:
-  - affix
+tags: [affix]
 ---

@@ -1,18 +1,16 @@
 ---
 type: lexeme
-lemma: ļihaša
-script:
-  - ļihaša
-  - льиьажа
+lemma: ļihaša
+cyrillic: льиьажа
 pos: nouns
 meaning: ear
-verb_type: ""
+verb_type:
 noun_class: "[[Class 9]]"
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
 root: "[[-haša-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

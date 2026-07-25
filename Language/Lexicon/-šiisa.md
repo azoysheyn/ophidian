@@ -1,18 +1,16 @@
 ---
 type: lexeme
-lemma: -šiisa
-script:
-  - šiisa
-  - жииса
+lemma: -šiisa
+cyrillic: жииса
 pos: adjectives
 meaning: small
-verb_type: ""
-noun_class: ""
-phon: ""
-etym: ""
+verb_type:
+noun_class:
+root:
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root: []
+status: ok
+tags: [lexeme]
 ---
 
