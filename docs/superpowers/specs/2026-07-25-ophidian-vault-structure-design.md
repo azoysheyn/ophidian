@@ -104,7 +104,7 @@ pos: nouns           # verbs | nouns | adjectives | adverbs | pronouns | numeral
 meaning: place
 verb_type:           # 1 | 2 | irregular — только для pos: verbs
 noun_class:          # "[[Class 7]]" — только для pos: nouns
-root:                # "[[-gaśi-]]"
+root:                # "[[-gaśi-]]" или ["[[-seșe-]]", "[[-gaśi-]]"] у составных
 phon:                # /.../
 etym:
 examples:
@@ -114,6 +114,11 @@ tags: [lexeme]
 ```
 
 Поля `script` больше нет: его первый элемент повторял `lemma`, а вложенность мешает Bases.
+
+`root` — либо одна ссылка, либо список ссылок. Составных лексем сейчас три
+(`seșegaśixxi`, `šasiše`, `šaxe`), и у каждой два корня; сводить их к одному значит
+терять состав слова. Элементы списка обязаны быть в кавычках — `["[[-seșe-]]", "[[-gaśi-]]"]`,
+а не `[[[-seșe-]], [[-gaśi-]]]`: без кавычек это невалидный YAML, и разбор ссылок ломается.
 
 ### root
 
