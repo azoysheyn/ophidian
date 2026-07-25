@@ -100,6 +100,20 @@ class FormatNote(unittest.TestCase):
         again, _ = parse_note(format_note(fm, ""))
         self.assertEqual(again, fm)
 
+    def test_list_of_link_values_is_quoted(self):
+        text = format_note({"root": ["[[-a-]]", "[[-b-]]"]}, "")
+        self.assertEqual(text, '---\nroot: ["[[-a-]]", "[[-b-]]"]\n---\n')
+
+    def test_list_of_links_roundtrips(self):
+        fm = {"root": ["[[-a-]]", "[[-b-]]"]}
+        again, body = parse_note(format_note(fm, ""))
+        self.assertEqual(again, fm)
+        self.assertEqual(body, "")
+
+    def test_single_word_list_item_stays_unquoted(self):
+        text = format_note({"tags": ["lexeme"]}, "")
+        self.assertEqual(text, "---\ntags: [lexeme]\n---\n")
+
 
 if __name__ == "__main__":
     unittest.main()

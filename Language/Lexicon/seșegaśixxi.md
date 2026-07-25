@@ -6,7 +6,7 @@ pos: verbs
 meaning: to have eaten and crawl in a safe place to digest
 verb_type: 2
 noun_class:
-root: [[[-seșe-]], [[-gaśi-]]]
+root: ["[[-seșe-]]", "[[-gaśi-]]"]
 phon:
 etym:
 examples:

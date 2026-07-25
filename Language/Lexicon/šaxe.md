@@ -6,7 +6,7 @@ pos: nouns
 meaning: day, the sun
 verb_type:
 noun_class: "[[Class 10]]"
-root: [[[-xe-]], [[-ša-]]]
+root: ["[[-xe-]]", "[[-ša-]]"]
 phon:
 etym:
 examples:

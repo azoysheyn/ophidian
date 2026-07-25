@@ -79,17 +79,20 @@ def parse_note(text):
     return fm, body
 
 
-def _format_value(value):
-    if value is None:
-        return ""
-    if isinstance(value, list):
-        return "[" + ", ".join(value) + "]"
-    text = str(value)
+def _quote_if_needed(text):
     if not text:
         return '""'
     if text[0] in _NEEDS_QUOTES_PREFIX or text != text.strip():
         return '"' + text + '"'
     return text
+
+
+def _format_value(value):
+    if value is None:
+        return ""
+    if isinstance(value, list):
+        return "[" + ", ".join(_quote_if_needed(str(item)) for item in value) + "]"
+    return _quote_if_needed(str(value))
 
 
 def format_note(fm, body):
