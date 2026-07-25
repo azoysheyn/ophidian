@@ -6,7 +6,7 @@ pos: verbs
 meaning: to die
 verb_type: "[[Type II]]"
 noun_class:
-root: [[[-gata-]]]
+root: "[[-gata-]]"
 phon:
 etym:
 examples:

@@ -6,7 +6,7 @@ pos: nouns
 meaning: head
 verb_type:
 noun_class: "[[Class 7]]"
-root: [[[-giși-]]]
+root: "[[-giși-]]"
 phon:
 etym:
 examples:

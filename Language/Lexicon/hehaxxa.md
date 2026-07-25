@@ -6,7 +6,7 @@ pos: verbs
 meaning: to swell, to bulge
 verb_type: 2
 noun_class:
-root: [[[-heha-]]]
+root: "[[-heha-]]"
 phon:
 etym:
 examples:

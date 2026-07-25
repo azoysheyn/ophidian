@@ -31,18 +31,33 @@ def blank(value):
     return value.strip() == ""
 
 
+def collapse_singleton(value):
+    """Список из одного элемента — на деле скалярное значение (напр. root)."""
+    if isinstance(value, list) and len(value) == 1:
+        return value[0]
+    return value
+
+
 def normalize(fm, order):
     out = {}
     for key in order:
         value = fm.get(key)
-        out[key] = None if blank(value) else value
+        out[key] = None if blank(value) else collapse_singleton(value)
     return out
 
 
 def script_to_cyrillic(fm):
-    """script: [латиница, кириллица] -> cyrillic. Латиница уже есть в lemma."""
+    """script: [латиница, кириллица] -> cyrillic. Латиница уже есть в lemma.
+
+    Заметка может быть уже мигрирована (поля script больше нет, cyrillic
+    уже выставлен) — в этом случае существующее значение cyrillic нельзя
+    затирать None, иначе повторный запуск скрипта уничтожает данные.
+    """
     script = fm.pop("script", None)
-    fm["cyrillic"] = script[1] if isinstance(script, list) and len(script) >= 2 else None
+    if isinstance(script, list) and len(script) >= 2:
+        fm["cyrillic"] = script[1]
+    elif "cyrillic" not in fm:
+        fm["cyrillic"] = None
 
 
 def migrate_lexeme(path):
@@ -51,7 +66,10 @@ def migrate_lexeme(path):
 
     # Имя файла — канон: переименования уже сделаны на предыдущем шаге.
     fm["lemma"] = path.stem
-    fm["status"] = "ok"
+    # По умолчанию — "ok", но существующий статус (напр. "unverified",
+    # выставленный вручную) нельзя затирать при повторном запуске.
+    if blank(fm.get("status")):
+        fm["status"] = "ok"
 
     fm = normalize(fm, LEXEME_ORDER)
     fm["type"] = "lexeme"

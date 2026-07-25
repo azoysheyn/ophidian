@@ -6,7 +6,7 @@ pos: nouns
 meaning: a tongue
 verb_type:
 noun_class: "[[Class 1]]"
-root: [[[-ti-]]]
+root: "[[-ti-]]"
 phon:
 etym:
 examples:

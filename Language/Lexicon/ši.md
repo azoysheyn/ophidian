@@ -6,7 +6,7 @@ pos: pronouns
 meaning: I, here, this
 verb_type:
 noun_class:
-root: [[[-ši-]]]
+root: "[[-ši-]]"
 phon:
 etym:
 examples:

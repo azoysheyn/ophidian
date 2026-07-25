@@ -6,7 +6,7 @@ pos: pronouns
 meaning: they, there, those (far from both of us)
 verb_type:
 noun_class:
-root: [[[-șe-]]]
+root: "[[-șe-]]"
 phon:
 etym:
 examples:

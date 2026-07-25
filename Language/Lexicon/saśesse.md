@@ -6,7 +6,7 @@ pos: verbs
 meaning: to get rid of sth
 verb_type: 1
 noun_class:
-root: [[[-saśe-]]]
+root: "[[-saśe-]]"
 phon:
 etym:
 examples:
