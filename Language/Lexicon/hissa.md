@@ -6,7 +6,7 @@ pos: verbs
 meaning: to hiss, to speak
 verb_type: 1
 noun_class:
-root: [[[-hisa-]]]
+root: "[[-hisa-]]"
 phon:
 etym:
 examples:

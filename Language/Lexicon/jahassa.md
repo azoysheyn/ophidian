@@ -6,7 +6,7 @@ pos: verbs
 meaning: to hurt
 verb_type: 1
 noun_class:
-root: [[[-jaha-]]]
+root: "[[-jaha-]]"
 phon:
 etym:
 examples:

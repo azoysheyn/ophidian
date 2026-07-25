@@ -6,7 +6,7 @@ pos: verbs
 meaning: to live
 verb_type: 1
 noun_class:
-root: [[[-śese-]]]
+root: "[[-śese-]]"
 phon:
 etym:
 examples:

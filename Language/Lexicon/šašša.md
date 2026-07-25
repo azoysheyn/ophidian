@@ -6,7 +6,7 @@ pos: nouns
 meaning: fire
 verb_type:
 noun_class: "[[Class 10]]"
-root: [[[-ša-]]]
+root: "[[-ša-]]"
 phon:
 etym:
 examples:

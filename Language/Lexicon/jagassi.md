@@ -6,7 +6,7 @@ pos: verbs
 meaning: to attack
 verb_type: "[[Type I]]"
 noun_class:
-root: [[[-jaga-]]]
+root: "[[-jaga-]]"
 phon:
 etym:
 examples:

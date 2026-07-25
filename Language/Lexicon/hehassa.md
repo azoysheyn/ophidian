@@ -6,7 +6,7 @@ pos: verbs
 meaning: to blow
 verb_type: 1
 noun_class:
-root: [[[-heha-]]]
+root: "[[-heha-]]"
 phon:
 etym:
 examples:

@@ -6,7 +6,7 @@ pos: nouns
 meaning: a tail
 verb_type:
 noun_class: "[[Class 7]]"
-root: [[[-śixi-]]]
+root: "[[-śixi-]]"
 phon:
 etym:
 examples:

@@ -6,7 +6,7 @@ pos: verbs
 meaning: to be open
 verb_type: 2
 noun_class:
-root: [[[-șaga-]]]
+root: "[[-șaga-]]"
 phon:
 etym:
 examples:

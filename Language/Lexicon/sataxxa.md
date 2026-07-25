@@ -6,7 +6,7 @@ pos: verbs
 meaning: to be called
 verb_type: 2
 noun_class:
-root: [[[-sata-]]]
+root: "[[-sata-]]"
 phon:
 etym:
 examples:

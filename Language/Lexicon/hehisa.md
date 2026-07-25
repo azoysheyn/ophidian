@@ -6,7 +6,7 @@ pos: nouns
 meaning: wind
 verb_type:
 noun_class: "[[Class 7]]"
-root: [[[-hisa-]]]
+root: "[[-hisa-]]"
 phon:
 etym:
 examples:

@@ -6,7 +6,7 @@ pos: nouns
 meaning: a serpent
 verb_type:
 noun_class: "[[Class 1]]"
-root: [[[-ciși-]]]
+root: "[[-ciși-]]"
 phon:
 etym:
 examples:

@@ -6,7 +6,7 @@ pos: verbs
 meaning: to go away
 verb_type: 1
 noun_class:
-root: [[[-ji-]]]
+root: "[[-ji-]]"
 phon:
 etym:
 examples:

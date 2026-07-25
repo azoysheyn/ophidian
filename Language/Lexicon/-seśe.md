@@ -6,7 +6,7 @@ pos: adjectives
 meaning: big
 verb_type:
 noun_class:
-root: [[[-seśe-]]]
+root: "[[-seśe-]]"
 phon:
 etym:
 examples:

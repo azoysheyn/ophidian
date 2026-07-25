@@ -6,7 +6,7 @@ pos: particles
 meaning: yes
 verb_type:
 noun_class:
-root: [[[-heeje-]]]
+root: "[[-heeje-]]"
 phon:
 etym: from "heeje" — "to be"
 examples:

@@ -6,7 +6,7 @@ pos: adjectives
 meaning: infrared, warm
 verb_type:
 noun_class:
-root: [[[-ša-]]]
+root: "[[-ša-]]"
 phon:
 etym:
 examples:

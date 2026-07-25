@@ -6,7 +6,7 @@ pos: verbs
 meaning: to open, to disembowel
 verb_type: 1
 noun_class:
-root: [[[-șaga-]]]
+root: "[[-șaga-]]"
 phon:
 etym:
 examples:
