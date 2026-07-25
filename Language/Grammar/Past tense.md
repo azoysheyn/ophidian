@@ -10,3 +10,6 @@ Examples:
 In spoken Ophidian Past Tense is formed through optional prefix *je-* and mandatory suffix *-l*:
 - *(je)sseșe'el*
 - *(je)ceșassal*
+
+Изначально в языке не было различения по времени. Способы выражать прошедшее и
+будущее развились позже.
