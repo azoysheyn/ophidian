@@ -14,3 +14,5 @@ status: ok
 tags: [lexeme]
 ---
 
+Requires an infinitive complement:
+- *qeșesse śașagassa* — I want to open

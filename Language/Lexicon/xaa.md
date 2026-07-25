@@ -8,7 +8,7 @@ verb_type:
 noun_class:
 root:
 phon:
-etym:
+etym: cf. Tok Pisin "long"
 examples:
 status: ok
 tags: [lexeme]

@@ -18,3 +18,7 @@ Finite form: CCVCV'V (geminated)
 
 Геминированная основа — форма основы, в которой первый согласный и последний
 гласный удваиваются, а аффикс `-xx-` отбрасывается.
+
+## Dictionary form
+
+Verbs are listed in the lexicon in their imperfective impersonal form.

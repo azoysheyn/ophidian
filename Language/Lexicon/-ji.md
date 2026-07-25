@@ -14,3 +14,4 @@ status: ok
 tags: [lexeme]
 ---
 
+This is a postposition, unlike *xaa*, which is a preposition.

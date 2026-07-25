@@ -8,7 +8,7 @@ verb_type:
 noun_class: "[[Class 7]]"
 root:
 phon:
-etym: from Sanskrit स्नेह (sneha)
+etym: from Sanskrit "sneha"
 examples:
 status: ok
 tags: [lexeme]

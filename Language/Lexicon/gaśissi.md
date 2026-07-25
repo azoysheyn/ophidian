@@ -14,3 +14,4 @@ status: ok
 tags: [lexeme]
 ---
 
+Directional prefixes can be added to this verb to indicate the direction of movement.
