@@ -3,11 +3,11 @@
 version: 0.4
 
 verbs:
-  - word-latin: "şagassa" # verbs are listed in their imperfective impersonate form
+  - word-latin: "șagassa" # verbs are listed in their imperfective impersonate form
     word-cyrillic: "шагасса"
     meaning: to open, to disembowel
     type: 1
-  - word-latin: "şagaxxa"
+  - word-latin: "șagaxxa"
     word-cyrillic: "шагахха"
     meaning: to be open
     type: 2
@@ -35,7 +35,7 @@ verbs:
     word-cyrillic: "гащиххи"
     meaning: to wait, to be static
     type: 2
-  - word-latin: "seşegaśixxi"
+  - word-latin: "seșegaśixxi"
     word-cyrillic: "сэшэгащиххи"
     meaning: to have eaten and crawl in a safe place to digest
     type: 2
@@ -89,7 +89,7 @@ verbs:
     word-cyrillic: "кэшэссэ"
     meaning: to want
     type: 1
-    # requires infinitive: qeșesse śaşagassa — I want to open
+    # requires infinitive: qeșesse śașagassa — I want to open
   - word-latin: "jahassa"
     word-cyrillic: "хьаьасса"
     meaning: to hurt
@@ -165,7 +165,7 @@ verbs:
   
   
 nouns:
-  - word-latin: "secişi"
+  - word-latin: "seciși"
     word-cyrillic: "сэсьиши"
     meaning: a serpent
     class: 1 # se- prefix, singular
