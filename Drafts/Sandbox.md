@@ -306,3 +306,6 @@ xešeta
 
 C=sșšśtjxhcgqlļ
 V=aei
+
+
+śi / щи	question particle (unfinished, commented out in lexicon.yaml)	e.g. śi șe siše — is it a rock?

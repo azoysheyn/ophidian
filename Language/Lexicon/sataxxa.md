@@ -14,3 +14,6 @@ status: ok
 tags: [lexeme]
 ---
 
+Examples:
+- *šisataxxa %name%* — my name is %name%
+- *gesataxxa ssi'i* — what is your name?

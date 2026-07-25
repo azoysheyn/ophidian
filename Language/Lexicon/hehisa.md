@@ -14,3 +14,4 @@ status: ok
 tags: [lexeme]
 ---
 
+Singularia tantum — this noun exists only in the singular.

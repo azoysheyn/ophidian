@@ -14,3 +14,4 @@ status: ok
 tags: [lexeme]
 ---
 
+Pluralia tantum — this noun exists only in the plural.

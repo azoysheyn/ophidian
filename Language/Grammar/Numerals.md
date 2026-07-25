@@ -16,4 +16,8 @@ II. Words:
 9. tisa
 10. tasa
 
+III. Numerals behave as adjectives:
+
+- *tešece xeta* — one bird
+- *teješece ttaa* — two birds
 
