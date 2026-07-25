@@ -1,18 +1,16 @@
 ---
 type: lexeme
 lemma: hegexxe
-script:
-  - hegexxe
-  - ьэгэххэ
+cyrillic: ьэгэххэ
 pos: verbs
 meaning: to smell (of)
-verb_type: "2"
-noun_class: ""
-phon: ""
-etym: ""
-examples:
-tags:
-  - lexeme
+verb_type: 2
+noun_class:
 root: "[[-hege-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

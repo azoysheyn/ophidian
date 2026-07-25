@@ -1,18 +1,16 @@
 ---
 type: lexeme
-lemma: -šixa
-script:
-  -  šixa
-  - жиха
+lemma: -šixa
+cyrillic: жиха
 pos: adjectives
 meaning: green
-verb_type: ""
-noun_class: ""
-phon: ""
-etym: ""
+verb_type:
+noun_class:
+root:
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root: []
+status: ok
+tags: [lexeme]
 ---
 

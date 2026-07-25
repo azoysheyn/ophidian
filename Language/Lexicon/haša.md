@@ -1,18 +1,16 @@
 ---
 type: lexeme
-lemma: haša
-script:
-  - haša
-  - ьажа
+lemma: haša
+cyrillic: ьажа
 pos: nouns
 meaning: sound
-verb_type: ""
+verb_type:
 noun_class: "[[Class 8]]"
-phon: ""
-etym: ""
-examples:
-tags:
-  - lexeme
 root: "[[-haša-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

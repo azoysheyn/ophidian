@@ -1,19 +1,16 @@
 ---
 type: lexeme
-lemma: hașe
-script:
-  - hașe
-  - ьашэ
+lemma: hașe
+cyrillic: ьашэ
 pos: pronouns
 meaning: they, there, those (far from both of us)
-verb_type: ""
-noun_class: ""
-phon: ""
-etym: ""
+verb_type:
+noun_class:
+root: [[[-șe-]]]
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root:
-  - "[[-șe-]]"
+status: ok
+tags: [lexeme]
 ---
 

@@ -1,18 +1,16 @@
 ---
 type: lexeme
-lemma: tašša
-script:
-  - tašša
-  - тажжа
+lemma: tašša
+cyrillic: тажжа
 pos: nouns
 meaning: door
-verb_type: ""
+verb_type:
 noun_class: "[[Class 7]]"
-phon: ""
+root:
+phon:
 etym: from Latin "porta"
-examples: 
-tags:
-  - lexeme
-root: ""
+examples:
+status: ok
+tags: [lexeme]
 ---
 

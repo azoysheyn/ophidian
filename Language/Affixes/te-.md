@@ -1,11 +1,8 @@
 ---
 type: affix
-script:
-  - te
-  - тэ
+cyrillic: тэ
 meaning: "[[Class 3]]"
 etym:
 examples:
-tags:
-  - affix
+tags: [affix]
 ---

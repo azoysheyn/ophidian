@@ -1,18 +1,16 @@
 ---
 type: lexeme
-lemma: ļišixe
-script:
-  - ļišixe
-  - льижихэ
+lemma: ļišixe
+cyrillic: льижихэ
 pos: nouns
 meaning: skin
-verb_type: ""
+verb_type:
 noun_class: "[[Class 9]]"
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
 root: "[[-šixe-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

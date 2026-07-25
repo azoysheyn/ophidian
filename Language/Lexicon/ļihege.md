@@ -1,18 +1,16 @@
 ---
 type: lexeme
-lemma: ļihege
-script:
-  - ļihege
-  - льихэгэ
+lemma: ļihege
+cyrillic: льихэгэ
 pos: nouns
 meaning: nose
-verb_type: ""
+verb_type:
 noun_class: "[[Class 9]]"
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
 root: "[[-hege-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

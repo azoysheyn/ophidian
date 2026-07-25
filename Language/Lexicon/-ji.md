@@ -1,18 +1,16 @@
 ---
 type: lexeme
 lemma: -ji
-script:
-  - ji
-  - хьи
+cyrillic: хьи
 pos: prepositions
 meaning: of
-verb_type: ""
-noun_class: ""
-phon: ""
-etym: ""
+verb_type:
+noun_class:
+root:
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root: []
+status: ok
+tags: [lexeme]
 ---
 

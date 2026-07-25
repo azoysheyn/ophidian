@@ -1,19 +1,16 @@
 ---
 type: lexeme
-lemma: seciși
-script:
-  - seciși
-  - сэсьиши
+lemma: seciși
+cyrillic: сэсьиши
 pos: nouns
 meaning: a serpent
-verb_type: ""
+verb_type:
 noun_class: "[[Class 1]]"
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
-root:
-  - "[[-ciși-]]"
+root: [[[-ciși-]]]
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

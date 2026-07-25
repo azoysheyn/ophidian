@@ -1,19 +1,16 @@
 ---
 type: lexeme
-lemma: jišissa
-script:
-  - jišissa
-  - хьижисса
+lemma: jišissa
+cyrillic: хьижисса
 pos: verbs
 meaning: to come
-verb_type: "1"
-noun_class: ""
-phon: ""
-etym: ""
+verb_type: 1
+noun_class:
+root: [[[-ji-]]]
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root:
-  - "[[-ji-]]"
+status: ok
+tags: [lexeme]
 ---
 

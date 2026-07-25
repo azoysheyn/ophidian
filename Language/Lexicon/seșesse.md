@@ -1,18 +1,16 @@
 ---
 type: lexeme
-lemma: seșesse
-script:
-  - seșesse
-  - сэшэссэ
+lemma: seșesse
+cyrillic: сэшэссэ
 pos: verbs
 meaning: to eat
-verb_type: "1"
-noun_class: ""
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
+verb_type: 1
+noun_class:
 root: "[[-seșe-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

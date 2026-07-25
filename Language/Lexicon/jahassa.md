@@ -1,19 +1,16 @@
 ---
 type: lexeme
 lemma: jahassa
-script:
-  - jahassa
-  - хьаьасса
+cyrillic: хьаьасса
 pos: verbs
 meaning: to hurt
-verb_type: "1"
-noun_class: ""
-phon: ""
-etym: ""
+verb_type: 1
+noun_class:
+root: [[[-jaha-]]]
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root:
-  - "[[-jaha-]]"
+status: ok
+tags: [lexeme]
 ---
 

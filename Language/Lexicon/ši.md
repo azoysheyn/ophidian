@@ -1,19 +1,16 @@
 ---
 type: lexeme
-lemma: ši
-script:
-  - ši
-  - жи
+lemma: ši
+cyrillic: жи
 pos: pronouns
 meaning: I, here, this
-verb_type: ""
-noun_class: ""
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
-root:
-  - "[[-ši-]]"
+verb_type:
+noun_class:
+root: [[[-ši-]]]
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

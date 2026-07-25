@@ -1,19 +1,16 @@
 ---
 type: lexeme
 lemma: hehisa
-script:
-  - hehisa
-  - ьэьиса
+cyrillic: ьэьиса
 pos: nouns
 meaning: wind
-verb_type: ""
+verb_type:
 noun_class: "[[Class 7]]"
-phon: ""
-etym: ""
+root: [[[-hisa-]]]
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root:
-  - "[[-hisa-]]"
+status: ok
+tags: [lexeme]
 ---
 

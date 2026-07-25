@@ -1,11 +1,8 @@
 ---
 type: affix
-script:
-  - se
-  - сэ
+cyrillic: сэ
 meaning: "[[Class 1]]"
 etym:
 examples:
-tags:
-  - affix
+tags: [affix]
 ---

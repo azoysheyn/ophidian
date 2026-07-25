@@ -1,19 +1,16 @@
 ---
 type: lexeme
-lemma: śahisa
-script:
-  - śahisa
-  - щаьиса
+lemma: śahisa
+cyrillic: щаьиса
 pos: nouns
 meaning: a language
-verb_type: ""
+verb_type:
 noun_class: "[[Class 7]]"
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
-root:
-  - "[[-hisa-]]"
+root: [[[-hisa-]]]
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

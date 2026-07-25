@@ -1,19 +1,16 @@
 ---
 type: lexeme
-lemma: giși
-script:
-  - giși
-  - гиши
+lemma: giși
+cyrillic: гиши
 pos: nouns
 meaning: head
-verb_type: ""
+verb_type:
 noun_class: "[[Class 7]]"
-phon: ""
-etym: ""
+root: [[[-giși-]]]
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root:
-  - "[[-giși-]]"
+status: ok
+tags: [lexeme]
 ---
 

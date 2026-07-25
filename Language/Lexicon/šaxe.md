@@ -1,20 +1,16 @@
 ---
 type: lexeme
-lemma: šaxe
-script:
-  - šaxe
-  - жахэ
+lemma: šaxe
+cyrillic: жахэ
 pos: nouns
 meaning: day, the sun
-verb_type: ""
+verb_type:
 noun_class: "[[Class 10]]"
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
-root:
-  - "[[-xe-]]"
-  - "[[-ša-]]"
+root: [[[-xe-]], [[-ša-]]]
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

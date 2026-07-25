@@ -1,12 +1,9 @@
 ---
 type: affix
-script:
-  - ssa-
-  - сса-
+cyrillic: сса-
 meaning: negation
-etym: ""
-examples: []
-tags:
-  - affix
+etym:
+examples:
+tags: [affix]
 ---
 

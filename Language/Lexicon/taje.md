@@ -1,18 +1,16 @@
 ---
 type: lexeme
 lemma: taje
-script:
-  - taje
-  - тахьэ
+cyrillic: тахьэ
 pos: nouns
 meaning: root
-verb_type: ""
+verb_type:
 noun_class: "[[Class 7]]"
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
-root: ""
+root:
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

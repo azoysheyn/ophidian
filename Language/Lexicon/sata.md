@@ -1,19 +1,16 @@
 ---
 type: lexeme
 lemma: sata
-script:
-  - sata
-  - сата
+cyrillic: сата
 pos: nouns
 meaning: a name
-verb_type: ""
+verb_type:
 noun_class: "[[Class 7]]"
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
-root:
-  - "[[-sata-]]"
+root: [[[-sata-]]]
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

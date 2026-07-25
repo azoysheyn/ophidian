@@ -1,18 +1,16 @@
 ---
 type: lexeme
 lemma: hege
-script:
-  - hege
-  - ьэгэ
+cyrillic: ьэгэ
 pos: nouns
 meaning: smell, scent
-verb_type: ""
+verb_type:
 noun_class: "[[Class 7]]"
-phon: ""
-etym: ""
-examples:
-tags:
-  - lexeme
 root: "[[-hege-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

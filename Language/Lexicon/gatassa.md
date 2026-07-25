@@ -1,18 +1,16 @@
 ---
 type: lexeme
 lemma: gatassa
-script:
-  - gatassa
-  - гатасса
+cyrillic: гатасса
 pos: verbs
 meaning: to kill
-verb_type: "1"
-noun_class: ""
-phon: ""
-etym: ""
-examples:
-tags:
-  - lexeme
+verb_type: 1
+noun_class:
 root: "[[-gata-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

@@ -1,18 +1,16 @@
 ---
 type: lexeme
-lemma: siše
-script:
-  - siše
-  - сижэ
+lemma: siše
+cyrillic: сижэ
 pos: nouns
 meaning: rock
-verb_type: ""
+verb_type:
 noun_class: "[[Class 7]]"
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
 root: "[[-siše-]]"
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

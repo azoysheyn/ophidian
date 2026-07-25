@@ -1,18 +1,16 @@
 ---
 type: lexeme
 lemma: ssaa
-script:
-  - ssaa
-  - ссаа
+cyrillic: ссаа
 pos: particles
-meaning: 'no'
-verb_type: ''
-noun_class: ''
-phon: ''
-etym: ''
-examples: []
-tags:
-- lexeme
-root: ''
+meaning: no
+verb_type:
+noun_class:
+root:
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

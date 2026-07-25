@@ -1,19 +1,16 @@
 ---
 type: lexeme
-lemma: saśesse
-script:
-  - saśesse
-  - сащэссэ
+lemma: saśesse
+cyrillic: сащэссэ
 pos: verbs
 meaning: to get rid of sth
-verb_type: "1"
-noun_class: ""
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
-root:
-  - "[[-saśe-]]"
+verb_type: 1
+noun_class:
+root: [[[-saśe-]]]
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

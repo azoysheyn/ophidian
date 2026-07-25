@@ -1,19 +1,16 @@
 ---
 type: lexeme
 lemma: satassa
-script:
-  - satassa
-  - сатасса
+cyrillic: сатасса
 pos: verbs
 meaning: to call
-verb_type: "1"
-noun_class: ""
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
-root:
-  - "[[-sata-]]"
+verb_type: 1
+noun_class:
+root: [[[-sata-]]]
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

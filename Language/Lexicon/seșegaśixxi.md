@@ -1,20 +1,16 @@
 ---
 type: lexeme
-lemma: seșegaśixxi
-script:
-  - seșegaśixxi
-  - сэшэгащиххи
+lemma: seșegaśixxi
+cyrillic: сэшэгащиххи
 pos: verbs
 meaning: to have eaten and crawl in a safe place to digest
-verb_type: "2"
-noun_class: ""
-phon: ""
-etym: ""
-examples: 
-tags:
-  - lexeme
-root:
-  - "[[-seșe-]]"
-  - "[[-gaśi-]]"
+verb_type: 2
+noun_class:
+root: [[[-seșe-]], [[-gaśi-]]]
+phon:
+etym:
+examples:
+status: ok
+tags: [lexeme]
 ---
 

@@ -1,18 +1,16 @@
 ---
 type: lexeme
 lemma: hattaa
-script:
-  - hattaa
-  - ьаттаа
+cyrillic: ьаттаа
 pos: pronouns
 meaning: other
-verb_type: ""
-noun_class: ""
-phon: ""
+verb_type:
+noun_class:
+root:
+phon:
 etym: from -ttaa "two"
 examples:
-tags:
-  - lexeme
-root:
+status: ok
+tags: [lexeme]
 ---
 

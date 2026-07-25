@@ -1,19 +1,16 @@
 ---
 type: lexeme
 lemma: jagassi
-script:
-  - jagassi
-  - хьагасси
+cyrillic: хьагасси
 pos: verbs
 meaning: to attack
 verb_type: "[[Type I]]"
-noun_class: ""
-phon: ""
-etym: ""
+noun_class:
+root: [[[-jaga-]]]
+phon:
+etym:
 examples:
-tags:
-  - lexeme
-root:
-  - "[[-jaga-]]"
+status: ok
+tags: [lexeme]
 ---
 
