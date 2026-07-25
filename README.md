@@ -1,3 +1,7 @@
+---
+version: 0.4
+---
+
 # ophidian
 
 Ophidian is a constructed language created for communication between humans and snakes in magical universes.
