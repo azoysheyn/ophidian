@@ -6,7 +6,7 @@ pos: nouns
 meaning: a warm rock
 verb_type:
 noun_class: "[[Class 10]]"
-root: [[[-siše-]], [[-ša-]]]
+root: ["[[-siše-]]", "[[-ša-]]"]
 phon:
 etym:
 examples:
