@@ -1,0 +1,10 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "root": "multitext",
+    "script": "multitext",
+    "verb_type": "text"
+  }
+}
