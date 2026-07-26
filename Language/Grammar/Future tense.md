@@ -12,5 +12,3 @@ In spoken Ophidian Future Tense is formed through prefix *qe-*:
 - *qeceșassa*
 
 Perfect aspect meaning can be added with *-l* suffix.
-
-An alternate construction uses the auxiliary *jigessa* ('to go') with the infinitive instead of *qeșesse*: *jigessa śa-verb* — e.g. *jigessa śașagassa*, 'will open'.
