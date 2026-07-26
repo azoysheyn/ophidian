@@ -1,7 +1,7 @@
 ---
 type: lexeme
 lemma: ceșassa
-cyrillic: сэшасса
+cyrillic: сьэшасса
 pos: verbs
 meaning: to slither
 verb_type: "[[Type I]]"
