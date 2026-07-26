@@ -11,15 +11,29 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from tools.notes import parse_note, parse_table
+from tools.notes import (
+    TABLE_COLUMNS,
+    TABLE_HEADER,
+    expected_phoneme_count,
+    parse_inventory,
+    parse_note,
+    parse_table,
+    table_contract_issues,
+)
 
 ROOT = Path(__file__).resolve().parent.parent
 
 CEDILLA = "ş"  # ş — запрещён, правильный символ ș U+0219
 ILLEGAL_NAME_CHARS = set('?*:/\\|"<>')
 LINK = re.compile(r"\[\[([^\]]+)\]\]")
-PHONEME_COUNT = 18  # 13 согласных + 4 гласных + гортанная смычка
-TABLE_COLUMNS = 6  # IPA + пять вариантов записи
+
+# Заметки, среди которых ищем символ ş — это источник правды и рабочие
+# материалы, а не служебные Meta/ и не сгенерированный build/.
+CEDILLA_SCAN_DIRS = ["Language", "Corpus", "Lore", "Drafts"]
+
+# Папки, в которых ищем цель ссылки [[...]] — весь волт, кроме служебного
+# build/ (сгенерирован, не источник правды).
+LINKABLE_DIRS = ["Language", "Corpus", "Lore", "Drafts", "Meta"]
 
 SCHEMA = {
     "lexeme": [
@@ -65,15 +79,21 @@ def _typed_notes(root):
         if not directory.is_dir():
             continue
         for path in sorted(directory.glob("*.md")):
-            if path.stem == "template":
-                continue
             fm, _ = parse_note(path.read_text(encoding="utf-8"))
             found.append((path, expected, fm))
     return found
 
 
+def _linkable_notes(root):
+    for dirname in LINKABLE_DIRS:
+        directory = root / dirname
+        if not directory.is_dir():
+            continue
+        yield from directory.rglob("*.md")
+
+
 def _note_names(root):
-    return {_nfc(path.stem) for path in (root / "Language").rglob("*.md")}
+    return {_nfc(path.stem) for path in _linkable_notes(root)}
 
 
 def _note_locations(root):
@@ -81,33 +101,64 @@ def _note_locations(root):
     заметка с таким именем существует. Используется для проверки, что
     типизированная ссылка (root, noun_class) ведёт в правильную папку."""
     locations = {}
-    for path in (root / "Language").rglob("*.md"):
+    for path in _linkable_notes(root):
         locations.setdefault(_nfc(path.stem), []).append(path.parent.relative_to(root))
     return locations
 
 
+def _check_cedilla(root, errors):
+    for dirname in CEDILLA_SCAN_DIRS:
+        directory = root / dirname
+        if not directory.is_dir():
+            continue
+        for path in sorted(directory.rglob("*.md")):
+            text = path.read_text(encoding="utf-8")
+            if CEDILLA in text:
+                errors.append(f"{path.relative_to(root)}: символ ş U+015F, ожидается ș U+0219")
+
+
 def _check_transliteration(root, errors):
+    inventory_path = root / "Language" / "Phonology" / "Inventory.md"
+    if not inventory_path.is_file():
+        errors.append("Inventory.md отсутствует")
+        return
+    inventory = parse_inventory(inventory_path.read_text(encoding="utf-8"))
+    expected_rows = expected_phoneme_count(inventory)
+
     path = root / "Language" / "Phonology" / "Transliteration.md"
     if not path.is_file():
         errors.append("Transliteration.md отсутствует")
         return
     rows = parse_table(path.read_text(encoding="utf-8"))
-    if not rows:
-        errors.append("Transliteration.md: таблица не найдена")
-        return
-    data = rows[1:]
-    if len(data) != PHONEME_COUNT:
-        errors.append(
-            f"Transliteration.md: строк данных {len(data)}, ожидается {PHONEME_COUNT} "
-            "(13 согласных + 4 гласных + гортанная смычка)"
-        )
-    for cells in data:
-        if len(cells) != TABLE_COLUMNS:
+
+    for issue in table_contract_issues(rows, expected_rows):
+        kind = issue["kind"]
+        if kind == "missing":
+            errors.append("Transliteration.md: таблица не найдена")
+        elif kind == "header_columns":
             errors.append(
-                f"Transliteration.md: в строке {cells[0]!r} колонок {len(cells)}, "
+                f"Transliteration.md: заголовок таблицы: ожидалось {TABLE_COLUMNS} колонок, "
+                f"получено {issue['got']}: {issue['raw']!r}"
+            )
+        elif kind == "header_mismatch":
+            errors.append(
+                "Transliteration.md: заголовок таблицы не соответствует контракту: "
+                f"ожидалось {TABLE_HEADER}, получено {issue['got']}"
+            )
+        elif kind == "row_count":
+            errors.append(
+                f"Transliteration.md: строк данных {issue['got']}, ожидается {issue['expected']} "
+                "(по Inventory.md: согласные + краткие гласные + гортанная смычка)"
+            )
+        elif kind == "row_columns":
+            cells = issue["cells"]
+            label = cells[0] if cells else issue["row"]
+            errors.append(
+                f"Transliteration.md: в строке {label!r} колонок {len(cells)}, "
                 f"ожидается {TABLE_COLUMNS}"
             )
-        elif any(not cell for cell in cells):
+        elif kind == "row_empty":
+            cells = issue["cells"]
             errors.append(f"Transliteration.md: пустая клетка в строке {cells[0]!r}")
 
 
@@ -142,8 +193,6 @@ def check_vault(root):
                 errors.append(f"{where}: поле {key!r} — пустая строка или пустой список, должно быть пустым")
 
         text = path.read_text(encoding="utf-8")
-        if CEDILLA in text:
-            errors.append(f"{where}: символ ş U+015F, ожидается ș U+0219")
         for target in LINK.findall(text):
             if _nfc(target) not in names:
                 errors.append(f"{where}: битая ссылка [[{target}]]")
@@ -192,6 +241,7 @@ def check_vault(root):
         if expected == "root" and _nfc(path.stem) not in referenced_roots:
             warnings.append(f"{path.relative_to(root)}: на корень не ссылается ни одна лексема")
 
+    _check_cedilla(root, errors)
     _check_transliteration(root, errors)
     return errors, warnings
 

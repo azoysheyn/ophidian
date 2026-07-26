@@ -114,6 +114,47 @@ class FormatNote(unittest.TestCase):
         text = format_note({"tags": ["lexeme"]}, "")
         self.assertEqual(text, "---\ntags: [lexeme]\n---\n")
 
+    def test_list_item_containing_comma_is_quoted_and_roundtrips(self):
+        # _format_value joins list items with ", "; if an item itself
+        # contains a comma and isn't quoted, parsing it back splits it
+        # into two items. Quoting must prevent that.
+        fm = {"examples": ["to open, to disembowel", "plain"]}
+        text = format_note(fm, "")
+        self.assertEqual(
+            text, '---\nexamples: ["to open, to disembowel", plain]\n---\n'
+        )
+        again, _ = parse_note(text)
+        self.assertEqual(again, fm)
+
+
+class ParseInventory(unittest.TestCase):
+    def test_parses_phonemes_and_categories(self):
+        from tools.notes import expected_phoneme_count, parse_inventory
+
+        text = (
+            "# Phoneme Inventory\n\n"
+            "## Consonants\n"
+            "**simple**: θ, s\n"
+            "**geminated**: θː, sː\n\n"
+            "## Vowels\n"
+            "**short**: i, e, a, u\n"
+            "**long**: iː, eː, aː, uː\n"
+            "**double**: iʔi\n\n"
+            "## Категории\n\n"
+            "**Согласные**\n"
+            "- soft: θ\n"
+            "- hard: s\n\n"
+            "**Гласные**\n"
+            "- front: i, e\n"
+            "- back: a, u\n"
+        )
+        inventory = parse_inventory(text)
+        self.assertEqual(inventory["consonants"]["simple"], ["θ", "s"])
+        self.assertEqual(inventory["vowels"]["short"], ["i", "e", "a", "u"])
+        self.assertEqual(inventory["categories"]["consonants"]["soft"], ["θ"])
+        self.assertEqual(inventory["categories"]["vowels"]["back"], ["a", "u"])
+        self.assertEqual(expected_phoneme_count(inventory), 2 + 4 + 1)
+
 
 if __name__ == "__main__":
     unittest.main()

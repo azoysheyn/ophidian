@@ -47,8 +47,33 @@ TABLE = """# Transliteration
 | --- | --- | --- | --- | --- | --- |
 """
 
+# Matches the real Language/Phonology/Inventory.md shape closely enough
+# that expected_phoneme_count() derives 18: 13 "simple" consonants + 4
+# "short" vowels + the glottal stop.
+INVENTORY = """# Phoneme Inventory
 
-def build_vault(directory, lexemes=None, table_rows=18):
+## Consonants
+**simple**: θ, s, sʲ, ʃ, ʂ, ɕ, ç, x, χ, ħ, h, ɬ, 𝼆
+**geminated**: θː, sː, sʲː, ʃː, ʂː, ɕː, çː, xː, χː, ħː, hː, ɬː, 𝼆ː
+
+## Vowels
+**short**: i, e, a, u
+**long**: iː, eː, aː, uː
+**double**: iʔi, eʔe, aʔa, uʔu
+
+## Категории
+
+**Согласные**
+- soft: θ, sʲ, ɕ, ç, h, 𝼆
+- hard: s, ʃ, ʂ, x, χ, ħ, ɬ
+
+**Гласные**
+- front: i, e, a
+- back: u
+"""
+
+
+def build_vault(directory, lexemes=None, table_rows=18, inventory=INVENTORY):
     root = Path(directory)
     (root / "Language" / "Lexicon").mkdir(parents=True)
     (root / "Language" / "Roots").mkdir(parents=True)
@@ -62,6 +87,7 @@ def build_vault(directory, lexemes=None, table_rows=18):
 
     table = TABLE + "".join(f"| p{i} | a | b | c | d | e |\n" for i in range(table_rows))
     (root / "Language" / "Phonology" / "Transliteration.md").write_text(table, encoding="utf-8")
+    (root / "Language" / "Phonology" / "Inventory.md").write_text(inventory, encoding="utf-8")
     return root
 
 
@@ -256,6 +282,84 @@ class CheckVault(unittest.TestCase):
             errors, warnings = check_vault(root)
             self.assertEqual(errors, [])
             self.assertTrue(any("unverified" in warning for warning in warnings))
+
+    def test_cedilla_outside_typed_dirs_is_an_error(self):
+        # Corpus/, Lore/, Drafts/ and Language/Grammar/, Language/Phonology/
+        # are not among the five typed directories but are still source of
+        # truth (or, for Drafts/, still worth catching). The scan must not
+        # be limited to the typed dirs.
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory)
+            (root / "Corpus").mkdir(parents=True)
+            (root / "Corpus" / "Story.md").write_text("secişi old taagataxxa.\n", encoding="utf-8")
+            errors, _ = check_vault(root)
+            self.assertTrue(
+                any("Corpus/Story.md" in error and "U+015F" in error for error in errors)
+            )
+
+    def test_transliteration_wrong_header_is_an_error(self):
+        # check.py must be at least as strict as build.py: renaming a
+        # column in the table header must fail check.py too, not just
+        # build.py.
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory)
+            bad_table = (
+                "# Transliteration\n\n"
+                "| IPA | latin-1 | latin-2 | latin-3 | cyr-1 | cyr-3 |\n"
+                "| --- | --- | --- | --- | --- | --- |\n"
+            ) + "".join(f"| p{i} | a | b | c | d | e |\n" for i in range(18))
+            (root / "Language" / "Phonology" / "Transliteration.md").write_text(
+                bad_table, encoding="utf-8"
+            )
+            errors, _ = check_vault(root)
+            self.assertTrue(
+                any("заголовок" in error and "контракту" in error for error in errors)
+            )
+
+    def test_phoneme_count_follows_inventory(self):
+        # Adding a 19th phoneme should be possible by editing notes alone:
+        # add a row to the table AND a phoneme to Inventory.md, and the
+        # expected count must follow, with no code change.
+        extra_inventory = INVENTORY.replace(
+            "**simple**: θ, s, sʲ, ʃ, ʂ, ɕ, ç, x, χ, ħ, h, ɬ, 𝼆",
+            "**simple**: θ, s, sʲ, ʃ, ʂ, ɕ, ç, x, χ, ħ, h, ɬ, 𝼆, k",
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, table_rows=19, inventory=extra_inventory)
+            errors, _ = check_vault(root)
+            self.assertEqual(errors, [])
+
+        # Without the matching Inventory.md entry, 19 rows is now wrong
+        # (expected stays 18).
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, table_rows=19)
+            errors, _ = check_vault(root)
+            self.assertTrue(any("18" in error for error in errors))
+
+    def test_link_to_corpus_note_resolves(self):
+        # A lexeme linking [[Fable]] where Fable.md lives in Corpus/, not
+        # Language/, must not be a broken link.
+        with_link = GOOD_LEXEME.replace("meaning: place", "meaning: place, see [[Fable]]")
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, {"gaśi": with_link})
+            (root / "Corpus").mkdir(parents=True)
+            (root / "Corpus" / "Fable.md").write_text("# Fable\n", encoding="utf-8")
+            errors, _ = check_vault(root)
+            self.assertTrue(not any("Fable" in error for error in errors))
+
+    def test_root_link_into_corpus_note_is_still_wrong_kind(self):
+        # Widening link resolution to the whole vault must not weaken the
+        # kind-aware check: a root field pointing at a note that only
+        # exists in Corpus/ (not Language/Roots/) is still an error.
+        bad = GOOD_LEXEME.replace('root: "[[-gaśi-]]"', 'root: "[[Fable]]"')
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, {"gaśi": bad})
+            (root / "Corpus").mkdir(parents=True)
+            (root / "Corpus" / "Fable.md").write_text("# Fable\n", encoding="utf-8")
+            errors, _ = check_vault(root)
+            self.assertTrue(
+                any("root" in error and "ожидается заметка" in error for error in errors)
+            )
 
 
 if __name__ == "__main__":

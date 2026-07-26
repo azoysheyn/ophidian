@@ -1,3 +1,5 @@
+import contextlib
+import io
 import sys
 import tempfile
 import unittest
@@ -5,7 +7,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from tools.build import BuildError, EXPORTED, build_lexicon, build_phonology, read_version
+from tools.build import BuildError, EXPORTED, build_lexicon, build_phonology, read_version, run
 
 LEXEME = """---
 type: lexeme
@@ -124,8 +126,33 @@ def _table_text(header, rows):
 
 TABLE = _table_text(TABLE_HEADER_ROW, PHONEMES)
 
+# Mirrors the real Language/Phonology/Inventory.md closely enough that
+# expected_phoneme_count() derives 18, matching PHONEMES above: 13 "simple"
+# consonants + 4 "short" vowels + the glottal stop.
+INVENTORY = """# Phoneme Inventory
 
-def build_vault(directory, lexeme_files=None, readme=README, table=TABLE):
+## Consonants
+**simple**: θ, s, sʲ, ʃ, ʂ, ɕ, ç, x, χ, ħ, h, ɬ, 𝼆
+**geminated**: θː, sː, sʲː, ʃː, ʂː, ɕː, çː, xː, χː, ħː, hː, ɬː, 𝼆ː
+
+## Vowels
+**short**: i, e, a, u
+**long**: iː, eː, aː, uː
+**double**: iʔi, eʔe, aʔa, uʔu
+
+## Категории
+
+**Согласные**
+- soft: θ, sʲ, ɕ, ç, h, 𝼆
+- hard: s, ʃ, ʂ, x, χ, ħ, ɬ
+
+**Гласные**
+- front: i, e, a
+- back: u
+"""
+
+
+def build_vault(directory, lexeme_files=None, readme=README, table=TABLE, inventory=INVENTORY):
     root = Path(directory)
     (root / "Language" / "Lexicon").mkdir(parents=True)
     (root / "Language" / "Phonology").mkdir(parents=True)
@@ -134,6 +161,7 @@ def build_vault(directory, lexeme_files=None, readme=README, table=TABLE):
     for name, content in lexeme_files.items():
         (root / "Language" / "Lexicon" / name).write_text(content, encoding="utf-8")
     (root / "Language" / "Phonology" / "Transliteration.md").write_text(table, encoding="utf-8")
+    (root / "Language" / "Phonology" / "Inventory.md").write_text(inventory, encoding="utf-8")
     (root / "README.md").write_text(readme, encoding="utf-8")
     return root
 
@@ -263,6 +291,66 @@ class BuildPhonology(unittest.TestCase):
             root = build_vault(directory, table=table)
             with self.assertRaises(BuildError):
                 build_phonology(root)
+
+    def test_phonology_includes_inventory_and_categories_from_inventory_md(self):
+        with tempfile.TemporaryDirectory() as directory:
+            data = build_phonology(build_vault(directory))
+            self.assertEqual(data["inventory"]["consonants"]["simple"][0], "θ")
+            self.assertEqual(len(data["inventory"]["consonants"]["simple"]), 13)
+            self.assertEqual(data["inventory"]["vowels"]["short"], ["i", "e", "a", "u"])
+            self.assertIn("iʔi", data["inventory"]["vowels"]["double"])
+            self.assertEqual(data["categories"]["consonants"]["soft"][0], "θ")
+            self.assertEqual(data["categories"]["vowels"]["front"], ["i", "e", "a"])
+
+    def test_phoneme_count_follows_inventory_not_a_hardcoded_constant(self):
+        # A 19th phoneme, added purely by editing notes (a table row and a
+        # matching Inventory.md entry), must be accepted without touching
+        # any Python file.
+        extra_row = PHONEMES + [["k", "k", "k", "k", "к", "к"]]
+        table = _table_text(TABLE_HEADER_ROW, extra_row)
+        extra_inventory = INVENTORY.replace(
+            "**simple**: θ, s, sʲ, ʃ, ʂ, ɕ, ç, x, χ, ħ, h, ɬ, 𝼆",
+            "**simple**: θ, s, sʲ, ʃ, ʂ, ɕ, ç, x, χ, ħ, h, ɬ, 𝼆, k",
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, table=table, inventory=extra_inventory)
+            data = build_phonology(root)
+            self.assertEqual(len(data["transliteration"]), 19)
+
+        # Same 19-row table but Inventory.md unchanged: now a mismatch.
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, table=table)
+            with self.assertRaises(BuildError):
+                build_phonology(root)
+
+
+class BuildRun(unittest.TestCase):
+    def test_broken_table_is_reported_without_a_traceback(self):
+        # main() must not let BuildError escape as a stack trace — the
+        # author isn't a programmer. run() is main()'s testable core: it
+        # takes root/out explicitly instead of reading the module-level
+        # ROOT constant.
+        broken_table = _table_text(TABLE_HEADER_ROW, PHONEMES[:-1])
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, table=broken_table)
+            out = Path(directory) / "build"
+            buffer = io.StringIO()
+            with contextlib.redirect_stdout(buffer):
+                code = run(root, out)
+            self.assertEqual(code, 1)
+            self.assertNotIn("Traceback", buffer.getvalue())
+            self.assertFalse((out / "phonology.json").exists())
+
+    def test_clean_vault_builds_and_returns_zero(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory)
+            out = Path(directory) / "build"
+            buffer = io.StringIO()
+            with contextlib.redirect_stdout(buffer):
+                code = run(root, out)
+            self.assertEqual(code, 0)
+            self.assertTrue((out / "lexicon.json").exists())
+            self.assertTrue((out / "phonology.json").exists())
 
 
 if __name__ == "__main__":

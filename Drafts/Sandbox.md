@@ -2,26 +2,26 @@
 
 This is the file for WIP ideas.
 
-ssaajahassaşej	don't hurt him /Leave him alone!	ssaa- don't / -jahassa- / -şe- HIM/HER / -j IMPER
+ssaajahassașej	don't hurt him /Leave him alone!	ssaa- don't / -jahassa- / -șe- HIM/HER / -j IMPER
 ssaajagassijet	don't do it/ attack? please	ssaa- don't / -jagassi- / -j- IMPER / -et REQUEST
-heeşagassa	откройся	-a REFLECTIVE? hee-?
-şagasse	открывать	
-şagassa	открываться	-ss- active-motion / -jj- state
-heeşagassa	let it open	повелеваю открыться как да будет? и типа инфинитив из этого образовался
+heeșagassa	откройся	-a REFLECTIVE? hee-?
+șagasse	открывать	
+șagassa	открываться	-ss- active-motion / -jj- state
+heeșagassa	let it open	повелеваю открыться как да будет? и типа инфинитив из этого образовался
 	↑ превратительная форма глагола?	
 		
 		
 hissa	to hiss	
-saaš	door	šişagassal saaš — I've opened the door / saaš şagaxxa — the door is open
-jagassi	attack	secişi setaajagassi tecişi — a serpent starts attacking (a) prey
-		se-cişi se-taa-jaga-ss-i te-cişi
-hašişagassa	we open	
-hašissaaşagassa	we do not open	
+saaš	door	šișagassal saaš — I've opened the door / saaš șagaxxa — the door is open
+jagassi	attack	seciși setaajagassi teciși — a serpent starts attacking (a) prey
+		se-ciși se-taa-jaga-ss-i te-ciși
+hašișagassa	we open	
+hašissaașagassa	we do not open	
 		
 ħešesse	want? will/shall	I want to hiss — šiħešesse śahissa | шикэшэссэ щаъисса | sriqesresse chahissa
 		
 		
-ļataxxa	to love	(şe)ļataxxaşe — she/he loves her/him | shelhathaxxashe | sheljathaxxashe
+ļataxxa	to love	(șe)ļataxxașe — she/he loves her/him | shelhathaxxashe | sheljathaxxashe
 		
 		
 		
@@ -31,11 +31,11 @@ teete	there (2 p)
 siisi	here	
 		
 		
-šecejii ļixešesa ļišiişa	a big nest	
+šecejii ļixešesa ļišiișa	a big nest	
 		
-šexxe	to be able to	I was able to open the door: (ši)ššee śaşagassal tašša | (sri)srsree chashagassal thasrsra
-		the snake was able to open the door: secişi seššee śaşagassal tašša
-		I opened it: (ši)şagassaşel
+šexxe	to be able to	I was able to open the door: (ši)ššee śașagassal tašša | (sri)srsree chashagassal thasrsra
+		the snake was able to open the door: seciși seššee śașagassal tašša
+		I opened it: (ši)șagassașel
 tašša	door if from esper. pordo	
 tesessa	window (fenestro)	tesessa → tejesessa pl.
 sasa	cup (from taso)	
@@ -47,15 +47,15 @@ tase???	good (from bone)	tasejii? tasega? -ga → adverbilizer?
 		
 (śa)heeje?	to be?	heeje — jjee — heej — hee — tahee
 		I was big — (ši)jjee šiseśe, šiseśejjee?
--gişe	one	-hexa
--lleşe	two	two bird nests — ļicejeśe ļilleşe || -ttaa
--ļijişe	three	-lata
+-gișe	one	-hexa
+-lleșe	two	two bird nests — ļicejeśe ļilleșe || -ttaa
+-ļijișe	three	-lata
 		
 		
 sa(sa)	and, with	śašecesse sa teješece — to fly with birds
 xaa	Tok Pisin ‘long’	
 		
--seśe → se'eśe? seśe'e?	big → very big (the biggest)	a very big door — tašša seśe'e; this door is bigger than that one — ši tašša seśe'e xaa ge/şe
+-seśe → se'eśe? seśe'e?	big → very big (the biggest)	a very big door — tašša seśe'e; this door is bigger than that one — ši tašša seśe'e xaa ge/șe
 		
 ļisixa	music	
 		
@@ -156,12 +156,12 @@ hard    -šisaśe
 
 šaļe
 šasagi
-gişi
-cecişa
-şihe
+giși
+cecișa
+șihe
 cejesa
 śesexe
-śisitişi
+śisitiși
 šisaśe
 tișasi
 

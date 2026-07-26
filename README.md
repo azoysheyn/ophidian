@@ -25,6 +25,25 @@ in magical universes.
 
 Правило: `Language/` правится только через Obsidian, `build/` пишет только скрипт.
 
+## Working in the vault
+
+- **Добавить лексему**: открой `Language/Lexicon/`, создай новую заметку и
+  вставь в неё шаблон командой Obsidian "Insert template" (Ctrl/Cmd+P) —
+  шаблоны лежат в `Meta/Templates/` и уже привязаны к плагину Templates.
+  Заполни поля frontmatter по образцу соседних заметок.
+- **Смотреть язык целиком**: таблицы `Meta/Bases/` (плагин Obsidian
+  Bases) дают сводный, фильтруемый вид лексикона, корней и классов —
+  удобнее, чем листать заметки по одной.
+- **Перед коммитом** обязательно прогони обе проверки:
+
+  ```bash
+  python3 tools/check.py && python3 tools/build.py
+  ```
+
+  `check.py` не должен падать (0 ошибок — предупреждения нормальны),
+  `build.py` должен собрать `build/lexicon.json` и `build/phonology.json`
+  без ошибок.
+
 ## Checks
 
 ```bash
