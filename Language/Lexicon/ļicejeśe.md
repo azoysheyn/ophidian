@@ -1,7 +1,7 @@
 ---
 type: lexeme
 lemma: ļicejeśe
-cyrillic:
+cyrillic: льисьэхьэщэ
 pos: nouns
 meaning: bird's nest
 verb_type:

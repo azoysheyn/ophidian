@@ -1,7 +1,7 @@
 ---
 type: lexeme
 lemma: ļicexese
-cyrillic:
+cyrillic: льисьэхэсэ
 pos: nouns
 meaning: snake's nest
 verb_type:
