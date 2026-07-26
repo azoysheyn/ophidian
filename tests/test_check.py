@@ -176,6 +176,87 @@ class CheckVault(unittest.TestCase):
             errors, _ = check_vault(root)
             self.assertEqual(errors, [])
 
+    def test_field_not_in_schema_is_an_error(self):
+        extra = GOOD_LEXEME.replace("tags: [lexeme]", "tags: [lexeme]\nbogus_field: 1")
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, {"gaśi": extra})
+            errors, _ = check_vault(root)
+            self.assertTrue(
+                any("bogus_field" in error and "не из схемы" in error for error in errors)
+            )
+
+    def test_schema_field_missing_from_note_is_an_error(self):
+        missing = GOOD_LEXEME.replace("phon:\n", "")
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, {"gaśi": missing})
+            errors, _ = check_vault(root)
+            self.assertTrue(
+                any("phon" in error and "отсутствует" in error for error in errors)
+            )
+
+    def test_illegal_filename_char_is_an_error(self):
+        lexeme = GOOD_LEXEME.replace("lemma: gaśi", "lemma: gaśi?")
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, {"gaśi?": lexeme})
+            errors, _ = check_vault(root)
+            self.assertTrue(
+                any("запрещённые символы" in error and "?" in error for error in errors)
+            )
+
+    def test_transliteration_wrong_column_count_is_an_error(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory)
+            rows = "".join(
+                "| p0 | a | b | c | d |\n" if i == 0 else f"| p{i} | a | b | c | d | e |\n"
+                for i in range(18)
+            )
+            (root / "Language" / "Phonology" / "Transliteration.md").write_text(
+                TABLE + rows, encoding="utf-8"
+            )
+            errors, _ = check_vault(root)
+            self.assertTrue(
+                any("колонок" in error and "p0" in error for error in errors)
+            )
+
+    def test_transliteration_empty_cell_is_an_error(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory)
+            rows = "".join(
+                "| p0 | | b | c | d | e |\n" if i == 0 else f"| p{i} | a | b | c | d | e |\n"
+                for i in range(18)
+            )
+            (root / "Language" / "Phonology" / "Transliteration.md").write_text(
+                TABLE + rows, encoding="utf-8"
+            )
+            errors, _ = check_vault(root)
+            self.assertTrue(
+                any("пустая клетка" in error and "p0" in error for error in errors)
+            )
+
+    def test_verb_without_verb_type_is_a_warning(self):
+        verb = GOOD_LEXEME.replace("pos: nouns", "pos: verbs")
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, {"gaśi": verb})
+            errors, warnings = check_vault(root)
+            self.assertEqual(errors, [])
+            self.assertTrue(any("verb_type" in warning for warning in warnings))
+
+    def test_lexeme_without_root_is_a_warning(self):
+        rootless = GOOD_LEXEME.replace('root: "[[-gaśi-]]"', "root:")
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, {"gaśi": rootless})
+            errors, warnings = check_vault(root)
+            self.assertEqual(errors, [])
+            self.assertTrue(any("нет root" in warning for warning in warnings))
+
+    def test_status_unverified_is_a_warning(self):
+        unverified = GOOD_LEXEME.replace("status: ok", "status: unverified")
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, {"gaśi": unverified})
+            errors, warnings = check_vault(root)
+            self.assertEqual(errors, [])
+            self.assertTrue(any("unverified" in warning for warning in warnings))
+
 
 if __name__ == "__main__":
     unittest.main()
