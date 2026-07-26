@@ -1,7 +1,7 @@
 ---
 type: noun_class
-class: {{title}}
-prefix: ""
-semantics: ""
+class:
+prefix:
+semantics:
 tags: [noun_class]
 ---

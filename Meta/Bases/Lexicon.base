@@ -1,0 +1,47 @@
+filters:
+  and:
+    - file.hasTag("lexeme")
+views:
+  - type: table
+    name: Все лексемы
+    order:
+      - lemma
+      - cyrillic
+      - pos
+      - meaning
+      - noun_class
+    sort:
+      - property: lemma
+        direction: ASC
+  - type: table
+    name: Глаголы
+    filters:
+      and:
+        - pos == "verbs"
+    order:
+      - lemma
+      - meaning
+      - verb_type
+    sort:
+      - property: lemma
+        direction: ASC
+  - type: table
+    name: Существительные
+    filters:
+      and:
+        - pos == "nouns"
+    order:
+      - lemma
+      - meaning
+      - noun_class
+    sort:
+      - property: lemma
+        direction: ASC
+  - type: table
+    name: Требует проверки
+    filters:
+      and:
+        - status == "unverified"
+    order:
+      - lemma
+      - meaning

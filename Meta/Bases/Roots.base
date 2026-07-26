@@ -1,0 +1,12 @@
+filters:
+  and:
+    - file.hasTag("root")
+views:
+  - type: table
+    name: Корни
+    order:
+      - file.name
+      - meaning
+    sort:
+      - property: file.name
+        direction: ASC
