@@ -19,6 +19,14 @@ LINK = re.compile(r"^\[\[([^\]]+)\]\]$")
 
 EXPORTED = ["lemma", "cyrillic", "pos", "meaning", "verb_type", "noun_class", "root", "phon", "etym", "status"]
 
+TABLE_HEADER = ["ipa", "latin-1", "latin-2", "latin-3", "cyr-1", "cyr-2"]
+TABLE_COLUMNS = len(TABLE_HEADER)
+TABLE_ROWS = 18
+
+
+class BuildError(Exception):
+    """Заметка не даёт собрать корректный вывод."""
+
 
 def _unwrap(value):
     """[[Class 7]] -> Class 7. Список ссылок -> список развёрнутых имён. Остальное как есть."""
@@ -33,8 +41,14 @@ def _unwrap(value):
 
 
 def read_version(root):
-    fm, _ = parse_note((Path(root) / "README.md").read_text(encoding="utf-8"))
-    return fm.get("version")
+    path = Path(root) / "README.md"
+    fm, _ = parse_note(path.read_text(encoding="utf-8"))
+    version = fm.get("version")
+    if version is None:
+        raise BuildError(
+            f"{path}: нет version во frontmatter (там и только там должна жить версия языка)"
+        )
+    return version
 
 
 def build_lexicon(root):
@@ -42,6 +56,8 @@ def build_lexicon(root):
     lexemes = []
     for path in sorted((root / "Language" / "Lexicon").glob("*.md")):
         fm, _ = parse_note(path.read_text(encoding="utf-8"))
+        if fm.get("type") != "lexeme":
+            continue
         lexemes.append({key: _unwrap(fm.get(key)) for key in EXPORTED})
     return {"version": read_version(root), "lexemes": lexemes}
 
@@ -50,9 +66,36 @@ def build_phonology(root):
     root = Path(root)
     path = root / "Language" / "Phonology" / "Transliteration.md"
     rows = parse_table(path.read_text(encoding="utf-8"))
+
+    if len(rows) != TABLE_ROWS + 1:
+        raise BuildError(
+            f"{path}: ожидалось {TABLE_ROWS} строк данных (плюс заголовок), "
+            f"получено {len(rows) - 1}"
+        )
+
     header = [cell.lower() for cell in rows[0]]
-    header[0] = "ipa"
-    transliteration = [dict(zip(header, cells)) for cells in rows[1:]]
+    if len(header) != TABLE_COLUMNS:
+        raise BuildError(
+            f"{path}: заголовок таблицы: ожидалось {TABLE_COLUMNS} колонок, "
+            f"получено {len(header)}: {rows[0]!r}"
+        )
+    if header != TABLE_HEADER:
+        raise BuildError(
+            f"{path}: заголовок таблицы не соответствует контракту: "
+            f"ожидалось {TABLE_HEADER}, получено {header}"
+        )
+
+    transliteration = []
+    for row_number, cells in enumerate(rows[1:], start=2):
+        if len(cells) != TABLE_COLUMNS:
+            raise BuildError(
+                f"{path}: строка {row_number}: ожидалось {TABLE_COLUMNS} колонок, "
+                f"получено {len(cells)}: {cells!r}"
+            )
+        if any(not cell for cell in cells):
+            raise BuildError(f"{path}: строка {row_number}: пустая ячейка: {cells!r}")
+        transliteration.append(dict(zip(TABLE_HEADER, cells)))
+
     return {"version": read_version(root), "transliteration": transliteration}
 
 
