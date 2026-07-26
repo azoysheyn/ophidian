@@ -231,11 +231,13 @@ frontmatter разбирается собственным маленьким р�
 
 **`tools/build.py`** — читает заметки, пишет `build/`:
 
-- `build/lexicon.json` — из frontmatter `Language/Lexicon/*.md`. Схема повторяет
-  frontmatter один в один (`lemma`, `cyrillic`, `pos`, `meaning`, `verb_type`,
-  `noun_class`, `root`, `status`), плоским списком, без группировки по частям речи:
-  фильтровать по `pos` умеет любой потребитель. Ссылки `[[Class 7]]` разворачиваются
-  в `Class 7`.
+- `build/lexicon.json` — из frontmatter `Language/Lexicon/*.md`. Экспортируются
+  `lemma`, `cyrillic`, `pos`, `meaning`, `verb_type`, `noun_class`, `root`, `phon`,
+  `etym`, `status` — плоским списком, без группировки по частям речи: фильтровать по
+  `pos` умеет любой потребитель. Ссылки `[[Class 7]]` разворачиваются в `Class 7`,
+  в том числе внутри списка у составных лексем. `type` и `tags` не экспортируются:
+  они нужны Obsidian, а не потребителю данных. `examples` не экспортируется — поле
+  пусто во всех заметках, примеры употребления живут прозой в теле заметки.
 - `build/phonology.json` — из таблицы в `Transliteration.md` и списков в `Inventory.md`.
   Ключ `transliteration` — список записей `{ipa, latin-1, latin-2, latin-3, cyr-1, cyr-2}`,
   то есть таблица построчно, без потери выравнивания.
