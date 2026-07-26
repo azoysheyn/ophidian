@@ -1,5 +1,6 @@
 import sys
 import tempfile
+import unicodedata
 import unittest
 from pathlib import Path
 
@@ -127,6 +128,53 @@ class CheckVault(unittest.TestCase):
             errors, warnings = check_vault(root)
             self.assertEqual(errors, [])
             self.assertTrue(any("-orphan-" in warning for warning in warnings))
+
+    def test_nfd_filename_with_nfc_lemma_is_clean(self):
+        # macOS filesystems hand back NFD names; the frontmatter lemma is
+        # typically typed in as NFC. They must compare equal.
+        nfd_name = unicodedata.normalize("NFD", "gaśi")
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, {nfd_name: GOOD_LEXEME})
+            errors, _ = check_vault(root)
+            self.assertEqual(errors, [])
+
+    def test_nfc_filename_with_nfd_lemma_is_clean(self):
+        nfd_lemma = unicodedata.normalize("NFD", "gaśi")
+        lexeme = GOOD_LEXEME.replace("lemma: gaśi", f"lemma: {nfd_lemma}")
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, {"gaśi": lexeme})
+            errors, _ = check_vault(root)
+            self.assertEqual(errors, [])
+
+    def test_root_pointing_at_lexeme_is_an_error(self):
+        # A root field pointing at the lexeme's own (undashed) name — the
+        # exact heeje.md bug: the link resolves, but to the wrong kind.
+        bad = GOOD_LEXEME.replace('root: "[[-gaśi-]]"', 'root: "[[gaśi]]"')
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, {"gaśi": bad})
+            errors, _ = check_vault(root)
+            self.assertTrue(
+                any("root" in error and "Lexicon" in error for error in errors)
+            )
+
+    def test_noun_class_pointing_at_root_is_an_error(self):
+        bad = GOOD_LEXEME.replace('noun_class: "[[Class 7]]"', 'noun_class: "[[-gaśi-]]"')
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, {"gaśi": bad})
+            errors, _ = check_vault(root)
+            self.assertTrue(
+                any("noun_class" in error and "Roots" in error for error in errors)
+            )
+
+    def test_two_root_compound_is_clean(self):
+        compound = GOOD_LEXEME.replace(
+            'root: "[[-gaśi-]]"', 'root: ["[[-gaśi-]]", "[[-lasa-]]"]'
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = build_vault(directory, {"gaśi": compound})
+            (root / "Language" / "Roots" / "-lasa-.md").write_text(GOOD_ROOT, encoding="utf-8")
+            errors, _ = check_vault(root)
+            self.assertEqual(errors, [])
 
 
 if __name__ == "__main__":

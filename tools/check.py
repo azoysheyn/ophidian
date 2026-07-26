@@ -6,6 +6,7 @@
 
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -39,6 +40,22 @@ TYPED_DIRS = {
     "Verb Classes": "verb_class",
 }
 
+# Типизированные поля-ссылки лексем: поле -> папка, в которой обязана
+# лежать целевая заметка.
+TYPED_LINK_FIELDS = {
+    "root": "Roots",
+    "noun_class": "Noun Classes",
+}
+
+
+def _nfc(text):
+    """Юникод-нормализация к NFC. Волт хранится преимущественно в NFD
+    (так отдаёт файловую систему macOS), но сравнивать текст нужно
+    независимо от формы нормализации."""
+    if not isinstance(text, str):
+        return text
+    return unicodedata.normalize("NFC", text)
+
 
 def _typed_notes(root):
     """-> список (path, expected_type, frontmatter)."""
@@ -56,7 +73,17 @@ def _typed_notes(root):
 
 
 def _note_names(root):
-    return {path.stem for path in (root / "Language").rglob("*.md")}
+    return {_nfc(path.stem) for path in (root / "Language").rglob("*.md")}
+
+
+def _note_locations(root):
+    """-> dict NFC(имя заметки) -> список папок (относительно root), где
+    заметка с таким именем существует. Используется для проверки, что
+    типизированная ссылка (root, noun_class) ведёт в правильную папку."""
+    locations = {}
+    for path in (root / "Language").rglob("*.md"):
+        locations.setdefault(_nfc(path.stem), []).append(path.parent.relative_to(root))
+    return locations
 
 
 def _check_transliteration(root, errors):
@@ -90,6 +117,7 @@ def check_vault(root):
     warnings = []
 
     names = _note_names(root)
+    locations = _note_locations(root)
     notes = _typed_notes(root)
     seen_lemmas = {}
     referenced_roots = set()
@@ -117,20 +145,40 @@ def check_vault(root):
         if CEDILLA in text:
             errors.append(f"{where}: символ ş U+015F, ожидается ș U+0219")
         for target in LINK.findall(text):
-            if target not in names:
+            if _nfc(target) not in names:
                 errors.append(f"{where}: битая ссылка [[{target}]]")
 
         if expected == "lexeme":
             lemma = fm.get("lemma")
-            if lemma != path.stem:
+            if _nfc(lemma) != _nfc(path.stem):
                 errors.append(f"{where}: lemma {lemma!r} не совпадает с именем файла {path.stem!r}")
-            if lemma in seen_lemmas:
-                errors.append(f"{where}: дубль lemma {lemma!r}, уже есть в {seen_lemmas[lemma]}")
+            lemma_key = _nfc(lemma)
+            if lemma_key in seen_lemmas:
+                errors.append(f"{where}: дубль lemma {lemma!r}, уже есть в {seen_lemmas[lemma_key]}")
             else:
-                seen_lemmas[lemma] = where
+                seen_lemmas[lemma_key] = where
+
+            for field, expected_dir in TYPED_LINK_FIELDS.items():
+                value = fm.get(field)
+                if not value:
+                    continue
+                items = value if isinstance(value, list) else [value]
+                expected_rel = Path("Language") / expected_dir
+                for item in items:
+                    for target in LINK.findall(str(item)):
+                        dirs = locations.get(_nfc(target))
+                        if not dirs:
+                            continue  # уже отмечено как битая ссылка выше
+                        if expected_rel not in dirs:
+                            actual = ", ".join(str(d) for d in dirs)
+                            errors.append(
+                                f"{where}: поле {field!r} ссылается на [[{target}]], "
+                                f"ожидается заметка в {expected_rel}, "
+                                f"а найдена в {actual}"
+                            )
 
             if fm.get("root"):
-                referenced_roots.update(LINK.findall(str(fm["root"])))
+                referenced_roots.update(_nfc(t) for t in LINK.findall(str(fm["root"])))
             else:
                 warnings.append(f"{where}: нет root")
             if fm.get("pos") == "nouns" and not fm.get("noun_class"):
@@ -141,7 +189,7 @@ def check_vault(root):
                 warnings.append(f"{where}: status=unverified")
 
     for path, expected, _ in notes:
-        if expected == "root" and path.stem not in referenced_roots:
+        if expected == "root" and _nfc(path.stem) not in referenced_roots:
             warnings.append(f"{path.relative_to(root)}: на корень не ссылается ни одна лексема")
 
     _check_transliteration(root, errors)
