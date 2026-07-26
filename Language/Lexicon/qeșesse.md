@@ -1,6 +1,6 @@
 ---
 type: lexeme
-lemma: qeșesse
+lemma: qeșesse
 cyrillic: кэшэссэ
 pos: verbs
 meaning: to want

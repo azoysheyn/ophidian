@@ -6,7 +6,7 @@ pos: verbs
 meaning: to be
 verb_type: irregular
 noun_class:
-root: "[[heeje]]"
+root: "[[-heeje-]]"
 phon:
 etym:
 examples:
