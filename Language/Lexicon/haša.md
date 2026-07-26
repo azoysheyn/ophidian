@@ -1,6 +1,6 @@
 ---
 type: lexeme
-lemma: haša
+lemma: haša
 cyrillic: ьажа
 pos: nouns
 meaning: sound

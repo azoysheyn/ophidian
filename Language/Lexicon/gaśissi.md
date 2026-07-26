@@ -1,6 +1,6 @@
 ---
 type: lexeme
-lemma: gaśissi
+lemma: gaśissi
 cyrillic: гащисси
 pos: verbs
 meaning: to move
