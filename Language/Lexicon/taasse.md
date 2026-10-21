@@ -4,7 +4,7 @@ lemma: taasse
 cyrillic: таассэ
 pos: verbs
 meaning: to begin
-verb_type: 1
+verb_type: "[[Type I]]"
 noun_class:
 root:
 phon:

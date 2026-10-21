@@ -4,7 +4,7 @@ lemma: harassa
 cyrillic: ьажасса
 pos: verbs
 meaning: to listen
-verb_type: 1
+verb_type: "[[Type I]]"
 noun_class:
 root: "[[-hara-]]"
 phon:

@@ -4,7 +4,7 @@ lemma: jigessa
 cyrillic: хьигэсса
 pos: verbs
 meaning: to go away
-verb_type: 1
+verb_type: "[[Type I]]"
 noun_class:
 root: "[[-ji-]]"
 phon:

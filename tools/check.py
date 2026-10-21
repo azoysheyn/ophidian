@@ -59,6 +59,7 @@ TYPED_DIRS = {
 TYPED_LINK_FIELDS = {
     "root": "Roots",
     "noun_class": "Noun Classes",
+    "verb_type": "Verb Classes",
 }
 
 
@@ -214,6 +215,11 @@ def check_vault(root):
                 items = value if isinstance(value, list) else [value]
                 expected_rel = Path("Language") / expected_dir
                 for item in items:
+                    if not LINK.findall(str(item)):
+                        errors.append(
+                            f"{where}: поле {field!r} = {item!r} — не ссылка, "
+                            f"ожидается [[...]] на заметку в {expected_rel}"
+                        )
                     for target in LINK.findall(str(item)):
                         dirs = locations.get(_nfc(target))
                         if not dirs:

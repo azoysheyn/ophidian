@@ -4,7 +4,7 @@ lemma: śesesse
 cyrillic: щэсэссэ
 pos: verbs
 meaning: to live
-verb_type: 1
+verb_type: "[[Type I]]"
 noun_class:
 root: "[[-śese-]]"
 phon:

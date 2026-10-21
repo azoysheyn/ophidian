@@ -4,7 +4,7 @@ lemma: șagaxxa
 cyrillic: шагахха
 pos: verbs
 meaning: to be open
-verb_type: 2
+verb_type: "[[Type II]]"
 noun_class:
 root: "[[-șaga-]]"
 phon:

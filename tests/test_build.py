@@ -35,7 +35,7 @@ lemma: qeșe
 cyrillic: кэщэ
 pos: verbs
 meaning: to coil
-verb_type: 2
+verb_type: "[[Type II]]"
 noun_class: "[[Class 3]]"
 root: "[[-qeșe-]]"
 phon: qeɕe
@@ -55,7 +55,7 @@ lemma: seșegaśixxi
 cyrillic: сэшэгащиххи
 pos: verbs
 meaning: to have eaten and crawl in a safe place to digest
-verb_type: 2
+verb_type: "[[Type II]]"
 noun_class:
 root: ["[[-seșe-]]", "[[-gaśi-]]"]
 phon:
@@ -216,7 +216,7 @@ class BuildLexicon(unittest.TestCase):
             self.assertEqual(entry["cyrillic"], "кэщэ")
             self.assertEqual(entry["pos"], "verbs")
             self.assertEqual(entry["meaning"], "to coil")
-            self.assertEqual(entry["verb_type"], "2")
+            self.assertEqual(entry["verb_type"], "Type II")
             self.assertEqual(entry["noun_class"], "Class 3")
             self.assertEqual(entry["root"], "-qeșe-")
             self.assertEqual(entry["phon"], "qeɕe")

@@ -4,7 +4,7 @@ lemma: hehassa
 cyrillic: ьэьасса
 pos: verbs
 meaning: to blow
-verb_type: 1
+verb_type: "[[Type I]]"
 noun_class:
 root: "[[-heha-]]"
 phon:

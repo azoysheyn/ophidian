@@ -4,7 +4,7 @@ lemma: gatassa
 cyrillic: гатасса
 pos: verbs
 meaning: to kill
-verb_type: 1
+verb_type: "[[Type I]]"
 noun_class:
 root: "[[-gata-]]"
 phon:

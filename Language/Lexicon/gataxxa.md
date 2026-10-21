@@ -4,7 +4,7 @@ lemma: gataxxa
 cyrillic: гатахха
 pos: verbs
 meaning: to be dead
-verb_type: 2
+verb_type: "[[Type II]]"
 noun_class:
 root: "[[-gata-]]"
 phon:

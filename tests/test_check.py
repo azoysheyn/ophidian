@@ -267,6 +267,26 @@ class CheckVault(unittest.TestCase):
             self.assertEqual(errors, [])
             self.assertTrue(any("verb_type" in warning for warning in warnings))
 
+    def test_bare_verb_type_is_an_error(self):
+        verb = GOOD_LEXEME.replace("pos: nouns", "pos: verbs").replace(
+            "verb_type:", "verb_type: 1"
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            errors, _ = check_vault(build_vault(directory, {"gaśi": verb}))
+            self.assertTrue(
+                any("verb_type" in error and "не ссылка" in error for error in errors)
+            )
+
+    def test_verb_type_pointing_at_noun_class_is_an_error(self):
+        verb = GOOD_LEXEME.replace("pos: nouns", "pos: verbs").replace(
+            "verb_type:", 'verb_type: "[[Class 7]]"'
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            errors, _ = check_vault(build_vault(directory, {"gaśi": verb}))
+            self.assertTrue(
+                any("verb_type" in error and "Verb Classes" in error for error in errors)
+            )
+
     def test_lexeme_without_root_is_a_warning(self):
         rootless = GOOD_LEXEME.replace('root: "[[-gaśi-]]"', "root:")
         with tempfile.TemporaryDirectory() as directory:

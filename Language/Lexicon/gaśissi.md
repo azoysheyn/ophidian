@@ -4,7 +4,7 @@ lemma: gaśissi
 cyrillic: гащисси
 pos: verbs
 meaning: to move
-verb_type: 1
+verb_type: "[[Type I]]"
 noun_class:
 root: "[[-gaśi-]]"
 phon:

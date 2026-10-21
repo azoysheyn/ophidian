@@ -4,7 +4,7 @@ lemma: haraxxa
 cyrillic: ьажахха
 pos: verbs
 meaning: to hear
-verb_type: 2
+verb_type: "[[Type II]]"
 noun_class:
 root: "[[-hara-]]"
 phon:

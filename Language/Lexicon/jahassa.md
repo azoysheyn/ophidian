@@ -4,13 +4,14 @@ lemma: jahassa
 cyrillic: хьаьасса
 pos: verbs
 meaning: to hurt
-verb_type: 1
+verb_type: "[[Type I]]"
 noun_class:
 root: "[[-jaha-]]"
 phon:
 etym:
 examples:
 status: ok
-tags: [lexeme]
+tags:
+  - lexeme
 ---
 

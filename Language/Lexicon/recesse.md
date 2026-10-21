@@ -4,7 +4,7 @@ lemma: recesse
 cyrillic: жэсьэссэ
 pos: verbs
 meaning: to fly
-verb_type: 1
+verb_type: "[[Type I]]"
 noun_class:
 root: "[[-rece-]]"
 phon:
