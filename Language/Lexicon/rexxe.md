@@ -4,7 +4,7 @@ lemma: rexxe
 cyrillic: жэххэ
 pos: verbs
 meaning: to be able to
-verb_type: 2
+verb_type: "[[Type II]]"
 noun_class:
 root:
 phon:

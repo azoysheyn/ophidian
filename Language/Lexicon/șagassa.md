@@ -4,7 +4,7 @@ lemma: șagassa
 cyrillic: шагасса
 pos: verbs
 meaning: to open, to disembowel
-verb_type: 1
+verb_type: "[[Type I]]"
 noun_class:
 root: "[[-șaga-]]"
 phon:

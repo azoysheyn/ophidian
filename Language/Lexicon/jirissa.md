@@ -4,7 +4,7 @@ lemma: jirissa
 cyrillic: хьижисса
 pos: verbs
 meaning: to come
-verb_type: 1
+verb_type: "[[Type I]]"
 noun_class:
 root: "[[-ji-]]"
 phon:

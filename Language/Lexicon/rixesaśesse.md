@@ -4,7 +4,7 @@ lemma: rixesaśesse
 cyrillic: жихэсащэссэ
 pos: verbs
 meaning: to shed skin
-verb_type: 1
+verb_type: "[[Type I]]"
 noun_class:
 root:
 phon:

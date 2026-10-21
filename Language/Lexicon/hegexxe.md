@@ -4,7 +4,7 @@ lemma: hegexxe
 cyrillic: ьэгэххэ
 pos: verbs
 meaning: to smell (of)
-verb_type: 2
+verb_type: "[[Type II]]"
 noun_class:
 root: "[[-hege-]]"
 phon:

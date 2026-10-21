@@ -4,7 +4,7 @@ lemma: xexxe
 cyrillic: хэххэ
 pos: verbs
 meaning: to see
-verb_type: 2
+verb_type: "[[Type II]]"
 noun_class:
 root: "[[-xe-]]"
 phon:

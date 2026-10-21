@@ -4,7 +4,7 @@ lemma: sataxxa
 cyrillic: сатахха
 pos: verbs
 meaning: to be called
-verb_type: 2
+verb_type: "[[Type II]]"
 noun_class:
 root: "[[-sata-]]"
 phon:

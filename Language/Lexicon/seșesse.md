@@ -4,7 +4,7 @@ lemma: seșesse
 cyrillic: сэшэссэ
 pos: verbs
 meaning: to eat
-verb_type: 1
+verb_type: "[[Type I]]"
 noun_class:
 root: "[[-seșe-]]"
 phon:

@@ -4,7 +4,7 @@ lemma: qeșesse
 cyrillic: кэшэссэ
 pos: verbs
 meaning: to want
-verb_type: 1
+verb_type: "[[Type I]]"
 noun_class:
 root:
 phon:
