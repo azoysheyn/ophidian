@@ -1,6 +1,6 @@
 ---
 type: lexeme
-lemma: šexassa
+lemma: rexassa
 cyrillic: жэхасса
 pos: verbs
 meaning: to close

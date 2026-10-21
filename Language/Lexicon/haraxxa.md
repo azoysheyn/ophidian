@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: hašaxxa
+lemma: haraxxa
 cyrillic: ьажахха
 pos: verbs
 meaning: to hear
 verb_type: 2
 noun_class:
-root: "[[-haša-]]"
+root: "[[-hara-]]"
 phon:
 etym:
 examples:

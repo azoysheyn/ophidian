@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: šasiše
+lemma: rasire
 cyrillic: жасижэ
 pos: nouns
 meaning: a warm rock
 verb_type:
 noun_class: "[[Class 10]]"
-root: ["[[-siše-]]", "[[-ša-]]"]
+root: ["[[-sire-]]", "[[-ra-]]"]
 phon:
 etym:
 examples:

@@ -1,9 +1,9 @@
 ---
 type: lexeme
-lemma: -tiša
-cyrillic: тиша
+lemma: -riisa
+cyrillic: жииса
 pos: adjectives
-meaning: white
+meaning: small
 verb_type:
 noun_class:
 root:

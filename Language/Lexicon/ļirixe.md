@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: ļihaša
-cyrillic: льиьажа
+lemma: ļirixe
+cyrillic: льижихэ
 pos: nouns
-meaning: ear
+meaning: skin
 verb_type:
 noun_class: "[[Class 9]]"
-root: "[[-haša-]]"
+root: "[[-rixe-]]"
 phon:
 etym:
 examples:

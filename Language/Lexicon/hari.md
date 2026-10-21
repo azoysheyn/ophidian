@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: -šisaśe
-cyrillic: жисащэ
-pos: adjectives
-meaning: hard, tough
+lemma: hari
+cyrillic: ьажи
+pos: pronouns
+meaning: we, here, these
 verb_type:
 noun_class:
-root:
+root: "[[-ri-]]"
 phon:
 etym:
 examples:

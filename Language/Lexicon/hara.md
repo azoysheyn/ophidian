@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: haša
+lemma: hara
 cyrillic: ьажа
 pos: nouns
 meaning: sound
 verb_type:
 noun_class: "[[Class 8]]"
-root: "[[-haša-]]"
+root: "[[-hara-]]"
 phon:
 etym:
 examples:

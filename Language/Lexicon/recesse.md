@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: šexxe
-cyrillic: жэххэ
+lemma: recesse
+cyrillic: жэсьэссэ
 pos: verbs
-meaning: to be able to
-verb_type: 2
+meaning: to fly
+verb_type: 1
 noun_class:
-root:
+root: "[[-rece-]]"
 phon:
 etym:
 examples:

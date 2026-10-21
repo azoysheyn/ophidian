@@ -15,5 +15,5 @@ tags: [lexeme]
 ---
 
 Examples:
-- *šisataxxa %name%* — my name is %name%
+- *risataxxa %name%* — my name is %name%
 - *gesataxxa ssi'i* — what is your name?

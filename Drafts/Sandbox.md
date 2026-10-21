@@ -12,50 +12,50 @@ heeșagassa	let it open	повелеваю открыться как да буд
 		
 		
 hissa	to hiss	
-saaš	door	šișagassal saaš — I've opened the door / saaš șagaxxa — the door is open
+saar	door	rișagassal saar — I've opened the door / saar șagaxxa — the door is open
 jagassi	attack	seciși setaajagassi teciși — a serpent starts attacking (a) prey
 		se-ciși se-taa-jaga-ss-i te-ciși
-hašișagassa	we open	
-hašissaașagassa	we do not open	
+harișagassa	we open	
+harissaașagassa	we do not open	
 		
-ħešesse	want? will/shall	I want to hiss — šiħešesse śahissa | шикэшэссэ щаъисса | sriqesresse chahissa
+ħeresse	want? will/shall	I want to hiss — riħeresse śahissa | шикэшэссэ щаъисса | sriqesresse chahissa
 		
 		
 ļataxxa	to love	(șe)ļataxxașe — she/he loves her/him | shelhathaxxashe | sheljathaxxashe
 		
 		
 		
-šasiše šaseśe	a big warm rock	
+rasire raseśe	a big warm rock	
 gaaga	there (3 p)	
 teete	there (2 p)	
 siisi	here	
 		
 		
-šecejii ļixešesa ļišiișa	a big nest	
+recejii ļixeresa ļiriișa	a big nest	
 		
-šexxe	to be able to	I was able to open the door: (ši)ššee śașagassal tašša | (sri)srsree chashagassal thasrsra
-		the snake was able to open the door: seciși seššee śașagassal tašša
-		I opened it: (ši)șagassașel
-tašša	door if from esper. pordo	
+rexxe	to be able to	I was able to open the door: (ri)rree śașagassal tarra | (sri)srsree chashagassal thasrsra
+		the snake was able to open the door: seciși serree śașagassal tarra
+		I opened it: (ri)șagassașel
+tarra	door if from esper. pordo	
 tesessa	window (fenestro)	tesessa → tejesessa pl.
 sasa	cup (from taso)	
 tase???	good (from bone)	tasejii? tasega? -ga → adverbilizer?
 		
 (ļi-)cejeśe	bird nest	
-(ļi-)cexese	snake nest	śašecessa sa teješece — to fly with birds
+(ļi-)cexese	snake nest	śarecessa sa tejerece — to fly with birds
 		
 		
 (śa)heeje?	to be?	heeje — jjee — heej — hee — tahee
-		I was big — (ši)jjee šiseśe, šiseśejjee?
+		I was big — (ri)jjee riseśe, riseśejjee?
 -gișe	one	-hexa
 -lleșe	two	two bird nests — ļicejeśe ļilleșe || -ttaa
 -ļijișe	three	-lata
 		
 		
-sa(sa)	and, with	śašecesse sa teješece — to fly with birds
+sa(sa)	and, with	śarecesse sa tejerece — to fly with birds
 xaa	Tok Pisin ‘long’	
 		
--seśe → se'eśe? seśe'e?	big → very big (the biggest)	a very big door — tašša seśe'e; this door is bigger than that one — ši tašša seśe'e xaa ge/șe
+-seśe → se'eśe? seśe'e?	big → very big (the biggest)	a very big door — tarra seśe'e; this door is bigger than that one — ri tarra seśe'e xaa ge/șe
 		
 ļisixa	music	
 		
@@ -63,7 +63,7 @@ xaa	Tok Pisin ‘long’
 		
 testing		
 Close the door softly and listen to the whispering wind.		rzexassaj tharzrza sjegelaga sa harzassaj xaa hehisa hissajii
-		šexassaj tašša śegelaga sa hašassaj xa hehisa hissajii
+		rexassaj tarra śegelaga sa harassaj xa hehisa hissajii
 		soft/slow/careful = sjegelaga
 		listen / hear = harzassa / harzaxxa
 		hehisa — wind
@@ -71,22 +71,22 @@ Close the door softly and listen to the whispering wind.		rzexassaj tharzrza sje
 		
 		
 		
-Will the stars still shine when the world falls asleep?		world falls-asleep śega ša-stars ša-shine still question-particle
+Will the stars still shine when the world falls asleep?		world falls-asleep śega ra-stars ra-shine still question-particle
 
 star = sky fire? 
 sky — ceśe
-šaššaceśe -> šaceśe?
+rarraceśe -> raceśe?
 
 shine — reflect light + stand out
-šaqassa
+raqassa
 
-śi'i world sleeps-śega hašaceśe šaqassa still?   maybe chi'i instead of chi
+śi'i world sleeps-śega haraceśe raqassa still?   maybe chi'i instead of chi
 
 
 
 The walls are painted with the colors of twilight.		walls are-painted[xx-declention] sa twilight-śi colors
-If I were a river, I would carve a path through the hardest stone.		(ši) sejeșa jjeeśega ši-carved seșeci xaa siše šisaśe'e
-If the rain falls gently, the flowers will bloom by morning.		the rain falls śegelaga śega flowers bloom xaa taašaxe
+If I were a river, I would carve a path through the hardest stone.		(ri) sejeșa jjeeśega ri-carved seșeci xaa sire risaśe'e
+If the rain falls gently, the flowers will bloom by morning.		the rain falls śegelaga śega flowers bloom xaa taaraxe
 
 river = sejeșa
 road, path = seșeci		
@@ -102,8 +102,8 @@ sataxxa	to be called	sataxxa tica
 (ge)ceshassa sji/lji?	how are you?	lit. you slithering? (ceshass~lji? ceshass~i?)
 sji/lji? sjilji?	question particle	
 		
-she sirze	it is a rock	șe (je) siše
-she sirze sji/lji?	is it a rock?	șe siše ļi?
+she sirze	it is a rock	șe (je) sire
+she sirze sji/lji?	is it a rock?	șe sire ļi?
 		
 		
 		
@@ -116,13 +116,13 @@ teja (tejeja) / seja (ce'eja)	egg (eggs)
 -et	усилительный суффикс?
 
 
-fire	rzarrza | šašša	harzarrza (pl.)
+fire	rzarrza | rarra	harzarrza (pl.)
 nose	ļihege	
 to go (away)		jigessa
 water	ljihaxa	ļijaxa? ļijeșa
-mouth	ļigeši	
+mouth	ļigeri	
 tongue	teci
-blood	šasa	
+blood	rasa	
 bone ?		
 you / 2 sg	ga	
 root	taje	
@@ -132,12 +132,12 @@ rain
 me	rzi	
 name 	sata	
 louse		
-wing	ļišece	
+wing	ļirece	
 flesh/meat	tesa	
 arm/hand ?		
 fly +	sjarzecesse	
 night	ļixe	
-ear		ļihaša
+ear		ļihara
 neck		
 far		sheshe
 to do/make	tasse
@@ -145,24 +145,24 @@ to begin    taasse
 close		rzirzi
 tail    śixi (seśixi)
 eye     xe
-day     šaxe
-morning taašaxe? tašaxe?
+day     raxe
+morning taaraxe? taraxe?
 head    ļigiși? tegiși? giși?
 
-hard    -šisaśe
+hard    -risaśe
 
 śașeceji
 śașecexxe
 
-šaļe
-šasagi
+raļe
+rasagi
 giși
 cecișa
 șihe
 cejesa
 śesexe
 śisitiși
-šisaśe
+risaśe
 tișasi
 
 
@@ -200,7 +200,7 @@ do you speak english?	chi hissa hellhiss? — hee
 russian					luss
 german					[diutisk →] ciitiss tutissi
 french					[franci →] llaass (t'lass) tulaasa
-serbian					[srpski →] ssiji (sštsji)
+serbian					[srpski →] ssiji (srtsji)
 
 
 -ti						diminutive?
@@ -227,14 +227,14 @@ bad
 tool, device
 inside
 dirty
-sound						haša (pl.tantum)
+sound						hara (pl.tantum)
 group
 
 colours
 red							-ssice
 warm/infrared				-sa'a
 black						-lasa
-white						-tiša
+white						-tira
 yellow						-teșșa
 green						-rhixa
 blue						harhaqa/rhili/gul/serhule
@@ -247,14 +247,14 @@ rixa
 
 
 three yellow snakes attack a small bird
-seciși seteșșa selata sejahassi tešece tešiisa
+seciși seteșșa selata sejahassi terece teriisa
 CL.1-snake CL.1-yellow CL.1-three CL.1-attack CL.3-bird CL.3-small
 
 i want to eat two eggs
-šeqeșesse śa-seșesse teja tettaa 
+reqeșesse śa-seșesse teja tettaa 
 
 o, hear the sound of this language!
-heehašaxxa ši śahisa-ji haša!
+heeharaxxa ri śahisa-ji hara!
 
 tejeșșa tejeha tejeteșșa
 all the yellow eggs
@@ -274,18 +274,18 @@ transliteration algorythm
 want + inf
 Pers.-qeșesse śa-Verb
 
-I'll see					(ši)qeșesse śaxexxe
+I'll see					(ri)qeșesse śaxexxe
 I'll have seen				qeșesse śaxxee
 
 jigessa + inf?
-I go? see					(ši)jigessa śaxexxe
+I go? see					(ri)jigessa śaxexxe
 
 
 **past tense meaning**
 
 be + inf?
 
-I closed the door 			šijjee śašexassal / śašexassalajjee?
+I closed the door 			rijjee śarexassal / śarexassalajjee?
 
 be + perf
 
@@ -301,11 +301,11 @@ jasissa, jarhesse, jatassa, jatesse
 
 
 cisașa
-xešeta
+xereta
 
 
-C=sșšśtjxhcgqlļ
+C=sșrśtjxhcgqlļ
 V=aei
 
 
-śi / щи	question particle (unfinished, commented out in lexicon.yaml)	e.g. śi șe siše — is it a rock?
+śi / щи	question particle (unfinished, commented out in lexicon.yaml)	e.g. śi șe sire — is it a rock?

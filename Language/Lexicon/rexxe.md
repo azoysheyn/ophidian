@@ -1,10 +1,10 @@
 ---
 type: lexeme
-lemma: xesešassa
-cyrillic: хэсэжасса
+lemma: rexxe
+cyrillic: жэххэ
 pos: verbs
-meaning: to find shelter
-verb_type: 1
+meaning: to be able to
+verb_type: 2
 noun_class:
 root:
 phon:
