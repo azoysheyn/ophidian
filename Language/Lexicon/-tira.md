@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: ši
-cyrillic: жи
-pos: pronouns
-meaning: I, here, this
+lemma: -tira
+cyrillic: тиша
+pos: adjectives
+meaning: white
 verb_type:
 noun_class:
-root: "[[-ši-]]"
+root:
 phon:
 etym:
 examples:

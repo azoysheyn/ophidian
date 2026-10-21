@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: šašša
-cyrillic: жажжа
+lemma: raxe
+cyrillic: жахэ
 pos: nouns
-meaning: fire
+meaning: day, the sun
 verb_type:
 noun_class: "[[Class 10]]"
-root: "[[-ša-]]"
+root: ["[[-xe-]]", "[[-ra-]]"]
 phon:
 etym:
 examples:

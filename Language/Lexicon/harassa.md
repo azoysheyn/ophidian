@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: šixesaśesse
-cyrillic: жихэсащэссэ
+lemma: harassa
+cyrillic: ьажасса
 pos: verbs
-meaning: to shed skin
+meaning: to listen
 verb_type: 1
 noun_class:
-root:
+root: "[[-hara-]]"
 phon:
 etym:
 examples:

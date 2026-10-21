@@ -1,14 +1,14 @@
 ---
 type: lexeme
-lemma: tašša
-cyrillic: тажжа
+lemma: taaraxe
+cyrillic: таажахэ
 pos: nouns
-meaning: door
+meaning: morning
 verb_type:
 noun_class: "[[Class 7]]"
-root:
+root: "[[-xe-]]"
 phon:
-etym: from Latin "porta"
+etym:
 examples:
 status: ok
 tags: [lexeme]

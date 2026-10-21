@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: taašaxe
-cyrillic: таажахэ
+lemma: sire
+cyrillic: сижэ
 pos: nouns
-meaning: morning
+meaning: rock
 verb_type:
 noun_class: "[[Class 7]]"
-root: "[[-xe-]]"
+root: "[[-sire-]]"
 phon:
 etym:
 examples:

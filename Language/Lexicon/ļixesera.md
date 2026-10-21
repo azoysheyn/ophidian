@@ -1,6 +1,6 @@
 ---
 type: lexeme
-lemma: ļixeseša
+lemma: ļixesera
 cyrillic: льихэсэжа
 pos: nouns
 meaning: shelter

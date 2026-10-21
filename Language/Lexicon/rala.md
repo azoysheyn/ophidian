@@ -1,6 +1,6 @@
 ---
 type: lexeme
-lemma: šala
+lemma: rala
 cyrillic: жала
 pos: adverbs
 meaning: later, after

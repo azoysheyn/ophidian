@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: šecesse
-cyrillic: жэсьэссэ
+lemma: xeserassa
+cyrillic: хэсэжасса
 pos: verbs
-meaning: to fly
+meaning: to find shelter
 verb_type: 1
 noun_class:
-root: "[[-šece-]]"
+root:
 phon:
 etym:
 examples:

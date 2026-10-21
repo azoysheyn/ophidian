@@ -1,14 +1,14 @@
 ---
 type: lexeme
-lemma: siše
-cyrillic: сижэ
+lemma: tarra
+cyrillic: тажжа
 pos: nouns
-meaning: rock
+meaning: door
 verb_type:
 noun_class: "[[Class 7]]"
-root: "[[-siše-]]"
+root:
 phon:
-etym:
+etym: from Latin "porta"
 examples:
 status: ok
 tags: [lexeme]

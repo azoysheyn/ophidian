@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: jišissa
-cyrillic: хьижисса
+lemma: rixesaśesse
+cyrillic: жихэсащэссэ
 pos: verbs
-meaning: to come
+meaning: to shed skin
 verb_type: 1
 noun_class:
-root: "[[-ji-]]"
+root:
 phon:
 etym:
 examples:

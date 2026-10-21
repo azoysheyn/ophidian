@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: -šixa
-cyrillic: жиха
-pos: adjectives
-meaning: green
+lemma: ri
+cyrillic: жи
+pos: pronouns
+meaning: I, here, this
 verb_type:
 noun_class:
-root:
+root: "[[-ri-]]"
 phon:
 etym:
 examples:

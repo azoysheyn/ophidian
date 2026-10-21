@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: hašassa
-cyrillic: ьажасса
+lemma: jirissa
+cyrillic: хьижисса
 pos: verbs
-meaning: to listen
+meaning: to come
 verb_type: 1
 noun_class:
-root: "[[-haša-]]"
+root: "[[-ji-]]"
 phon:
 etym:
 examples:

@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: -ša'a
-cyrillic: жаъа
+lemma: -rixa
+cyrillic: жиха
 pos: adjectives
-meaning: infrared, warm
+meaning: green
 verb_type:
 noun_class:
-root: "[[-ša-]]"
+root:
 phon:
 etym:
 examples:

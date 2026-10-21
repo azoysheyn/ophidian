@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: -šiisa
-cyrillic: жииса
+lemma: -ra'a
+cyrillic: жаъа
 pos: adjectives
-meaning: small
+meaning: infrared, warm
 verb_type:
 noun_class:
-root:
+root: "[[-ra-]]"
 phon:
 etym:
 examples:
