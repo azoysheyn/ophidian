@@ -8,7 +8,10 @@
 
 1. Only the stem is borrowed.
 2. Out of several consecutive consonants, the last is used, others drop (e.g. -стр- → l)
-3. The word is borrowed in sg. / infinitive form. 
+3. The word is borrowed in sg. / infinitive form.
+4. Correspondences are phonetic, not by letter: what counts is the sound,
+   not how Russian spells it. So **е** is either [jэ] → `je` (at the start of
+   a word and after a vowel) or just [э] → `e` (after a consonant).
 
 | Русский        | Офидский |
 | -------------- | -------- |
@@ -21,8 +24,9 @@
 | х, к, г        | → x      |
 | л, н, р        | → l      |
 | ль, нь, рь     | → ļ      |
-| а | → а |
+| а | → a |
 | э | → e |
+| е | → je / e |
 | и | → i |
 | о | → o |
 | у | → u |
