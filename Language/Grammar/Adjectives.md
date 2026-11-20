@@ -10,8 +10,23 @@ example: -seśe'e
 affix: "-V'V"
 example: -seśe'e
 
-Comparative and superlative are recorded with the same affix and the same
-example in the source material. This may be a genuine syncretism (the two
-degrees are simply not distinguished morphologically), or it may be an
-unresolved gap where the superlative's distinct form was never worked out.
-The record is kept as-is rather than invented past what is known.
+## Сравнительная и превосходная — одна форма
+
+Это задумано (14 ноя 2026). Форма *-V'V* одна для обеих степеней.
+Степень показывает синтаксис:
+
+| Значение | Конструкция |
+| --- | --- |
+| больше, чем X | *-seśe'e* + [[xaa]] X |
+| больше всех | *-seśe'e* + [[-șșa]] «все» |
+
+Пример: *ri tarra seśe'e xaa ge* — эта дверь больше, чем та (Sandbox).
+«Чем» передаёт предлог [[xaa]].
+
+## Прилагательное от глагола
+
+Суффикс [[-ji'i]] делает прилагательное от глагола: *hissa* → *hissaji'i* «шепчущий».
+
+## Наречие
+
+Суффикс [[-ga]] делает наречие: *śegela* → *śegelaga* «тихо, мягко».

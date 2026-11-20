@@ -1,7 +1,7 @@
 ---
 type: lexeme
-lemma: șagaxxa
-cyrillic: шагахха
+lemma: șagahha
+cyrillic: шагаььа
 pos: verbs
 meaning: to be open
 verb_type: "[[Type II]]"

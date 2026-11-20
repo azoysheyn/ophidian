@@ -4,11 +4,11 @@ However, the future tense semantics can be expressed through this construction:
 *qeșesse śa-verb*
 
 Examples:
-- *qeșesse śa-sseșe'e (seșexxe)* — will digest
+- *qeșesse śa-sseșe'e (seșehhe)* — will digest
 - *qeșesse śa-ceșassa (ceșassa)* — will slither
 
 In spoken Ophidian Future Tense is formed through prefix *qe-*:
-- *qeseșexxe/qesseșe'e*
+- *qeseșehhe/qesseșe'e*
 - *qeceșassa*
 
 Perfect aspect meaning can be added with *-l* suffix.

@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: xexxe
-cyrillic: хэххэ
+lemma: rehhe
+cyrillic: жэььэ
 pos: verbs
-meaning: to see
+meaning: to be able to
 verb_type: "[[Type II]]"
 noun_class:
-root: "[[-xe-]]"
+root:
 phon:
 etym:
 examples:

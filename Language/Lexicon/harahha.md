@@ -1,7 +1,7 @@
 ---
 type: lexeme
-lemma: haraxxa
-cyrillic: ьажахха
+lemma: harahha
+cyrillic: ьажаььа
 pos: verbs
 meaning: to hear
 verb_type: "[[Type II]]"

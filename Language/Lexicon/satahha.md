@@ -1,7 +1,7 @@
 ---
 type: lexeme
-lemma: sataxxa
-cyrillic: сатахха
+lemma: satahha
+cyrillic: сатаььа
 pos: verbs
 meaning: to be called
 verb_type: "[[Type II]]"
@@ -15,5 +15,5 @@ tags: [lexeme]
 ---
 
 Examples:
-- *risataxxa %name%* — my name is %name%
-- *gesataxxa ssi'i* — what is your name?
+- *risatahha %name%* — my name is %name%
+- *gesatahha ssi'i* — what is your name?

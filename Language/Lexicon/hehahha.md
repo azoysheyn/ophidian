@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: taagataxxa
-cyrillic: таагатахха
+lemma: hehahha
+cyrillic: ьэьаььа
 pos: verbs
-meaning: to die
+meaning: to swell, to bulge
 verb_type: "[[Type II]]"
 noun_class:
-root: "[[-gata-]]"
+root: "[[-heha-]]"
 phon:
 etym:
 examples:

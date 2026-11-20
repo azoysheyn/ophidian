@@ -5,9 +5,9 @@ affix: "-ss-"
 stem: basic
 example: șagassa
 ### type: 2
-affix: "-xx-"
+affix: "-hh-"
 stem: basic
-example: șagaxxa
+example: șagahha
 
 ## Perfective
 

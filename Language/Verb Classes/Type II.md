@@ -1,6 +1,6 @@
 ---
 type: verb_class
-affix: -xx-
+affix: -hh-
 semantics: state
 tags:
   - verb_class

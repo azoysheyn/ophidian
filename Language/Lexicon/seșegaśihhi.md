@@ -1,7 +1,7 @@
 ---
 type: lexeme
-lemma: seșegaśixxi
-cyrillic: сэшэгащиххи
+lemma: seșegaśihhi
+cyrillic: сэшэгащиььи
 pos: verbs
 meaning: to have eaten and crawl in a safe place to digest
 verb_type: "[[Type II]]"

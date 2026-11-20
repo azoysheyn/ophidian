@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: śesexxe
-cyrillic: щэсэххэ
+lemma: taagatahha
+cyrillic: таагатаььа
 pos: verbs
-meaning: to be alive
+meaning: to die
 verb_type: "[[Type II]]"
 noun_class:
-root: "[[-śese-]]"
+root: "[[-gata-]]"
 phon:
 etym:
 examples:

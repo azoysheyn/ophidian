@@ -26,7 +26,7 @@ The old snake was dying. He lay coiled beneath the roots of an acacia tree, his 
 
 The old snake was dying.
 snake old is dying
-seciși old taagataxxa.
+seciși old taagatahha.
 
 He lay coiled beneath the roots of an acacia tree, his scales dry, his breath slow.
 he-lies coils xaa taje of acacia. his scales are dry. his breath is slow.

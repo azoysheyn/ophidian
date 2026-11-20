@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: rexxe
-cyrillic: жэххэ
+lemma: śesehhe
+cyrillic: щэсэььэ
 pos: verbs
-meaning: to be able to
+meaning: to be alive
 verb_type: "[[Type II]]"
 noun_class:
-root:
+root: "[[-śese-]]"
 phon:
 etym:
 examples:

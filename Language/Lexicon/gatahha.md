@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: hegexxe
-cyrillic: ьэгэххэ
+lemma: gatahha
+cyrillic: гатаььа
 pos: verbs
-meaning: to smell (of)
+meaning: to be dead
 verb_type: "[[Type II]]"
 noun_class:
-root: "[[-hege-]]"
+root: "[[-gata-]]"
 phon:
 etym:
 examples:

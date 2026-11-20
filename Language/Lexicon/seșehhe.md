@@ -1,7 +1,7 @@
 ---
 type: lexeme
-lemma: seșexxe
-cyrillic: сэшэххэ
+lemma: seșehhe
+cyrillic: сэшэььэ
 pos: verbs
 meaning: to digest
 verb_type: "[[Type II]]"

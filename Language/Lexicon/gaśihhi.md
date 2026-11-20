@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: hehaxxa
-cyrillic: ьэьахха
+lemma: gaśihhi
+cyrillic: гащиььи
 pos: verbs
-meaning: to swell, to bulge
+meaning: to wait, to be static
 verb_type: "[[Type II]]"
 noun_class:
-root: "[[-heha-]]"
+root: "[[-gaśi-]]"
 phon:
 etym:
 examples:

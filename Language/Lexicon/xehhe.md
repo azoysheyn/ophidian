@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: gataxxa
-cyrillic: гатахха
+lemma: xehhe
+cyrillic: хэььэ
 pos: verbs
-meaning: to be dead
+meaning: to see
 verb_type: "[[Type II]]"
 noun_class:
-root: "[[-gata-]]"
+root: "[[-xe-]]"
 phon:
 etym:
 examples:

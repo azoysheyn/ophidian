@@ -1,12 +1,12 @@
 ---
 type: lexeme
-lemma: gaśixxi
-cyrillic: гащиххи
+lemma: hegehhe
+cyrillic: ьэгэььэ
 pos: verbs
-meaning: to wait, to be static
+meaning: to smell (of)
 verb_type: "[[Type II]]"
 noun_class:
-root: "[[-gaśi-]]"
+root: "[[-hege-]]"
 phon:
 etym:
 examples:

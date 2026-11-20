@@ -1,1 +1,26 @@
-Pronouns can also be used as prefixes on verbs, marking the subject and the object of the action.
+Pronouns can also be used as prefixes on verbs, marking the subject of the action,
+and as suffixes, marking the object.
+
+## Личные и указательные — одно слово
+
+Местоимение значит лицо и расстояние сразу.
+
+| | ед. ч. | мн. ч. | Значения |
+| --- | --- | --- | --- |
+| 1-е лицо | [[ri]] | [[hari]] | я / мы, здесь, этот |
+| 2-е лицо | [[ge]] | [[hage]] | ты / вы, там у тебя, тот |
+| 3-е лицо | [[șe]] | [[hașe]] | он, она, оно / они, там вдали, тот |
+
+Множественное — с приставкой *ha-* ([[Word Formation]]).
+
+## Приставки на глаголе
+
+Местоимение-субъект стоит на глаголе приставкой: *ri-șagassa* — я открываю.
+Местоимение-объект стоит на глаголе суффиксом: *șagassa-șe-l* — открыл это.
+Глагол согласуется только с субъектом. Правила — в [[Verb Agreement]].
+
+## Другие местоимения
+
+- [[ssi'i]] — что, кто, какой: [[Questions]]
+- [[-șșa]] — все
+- [[hattaa]] — другой

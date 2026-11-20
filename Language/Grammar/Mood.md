@@ -2,12 +2,19 @@
 ### type: 1, 2
 affix: null
 stem: basic
-example: șagassa, șagaxxa
+example: șagassa, șagahha
 ## Imperative
 ### type: 1, 2
 affix: "-j"
-stem: basic
-example: șagassaj, șagaxxaj ???
+stem: basic (type 1), geminated (type 2)
+example: șagassaj, șșaga'aj
+
+Императив типа II берёт геминированную основу (решено 15 ноя 2026):
+*gaśihhi* «ждать» → *ggaśi'ij* «жди!». [[Verb Types]].
+
+В версии 0.3 (2025) у типа II императива не было. Он нужен: «жди!» — частый приказ.
+
+Суффикс *-j* стоит последним, после залога: *șagassacej* ([[Verb Agreement]]).
 
 ## Jussive
 ### type: 1
